@@ -1,0 +1,1 @@
+include ':app', ':mssql-jdbc-7.0.0.jre10', ':mssql-jdbc-7.0.0.jre8', ':sqljdbc4', ':sqljdbc'
