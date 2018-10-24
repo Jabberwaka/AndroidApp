@@ -25,8 +25,39 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button button = findViewById(R.id.button);
         Button button2 = findViewById(R.id.button6);
+
+
+
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+        String db = null;
+        try {
+            Class.forName("net.sourceforge.jtds.jdbc.Driver");
+            Connection dbCon = DriverManager.getConnection("jdbc:jtds:sqlserver://traffic-cam.database.windows.net:1433/Android;user=tyler@traffic-cam;password=Password!;");
+            db = dbCon.toString();
+
+            Statement stmt = dbCon.createStatement();
+            String query = "SELECT cam_name FROM Traffic_Camera WHERE cam_id = 1;";
+            ResultSet rs = stmt.executeQuery(query);
+            if(rs.next()){
+                String name = rs.getString(1);
+                button.setText(name);
+            }
+
+             query = "SELECT cam_name FROM Traffic_Camera WHERE cam_id = 2;";
+             rs = stmt.executeQuery(query);
+             if(rs.next()){
+                String name = rs.getString(1);
+                button2.setText(name);
+            }
+
+        }
+        catch (Exception e){
+            button.setText(e.getMessage());
+        }
+
         TextView text = findViewById(R.id.textView2);
-        text.setText(SQLConnect());
+        text.setText(SQLConnect()); //to prove sql server connected
     }
 
     public void viewCamera(View view){
@@ -45,8 +76,9 @@ public class MainActivity extends AppCompatActivity {
         String db = null;
         try{
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
-            Connection dbCon = DriverManager.getConnection("jdbc:jtds:sqlserver://traffic-cam.database.windows.net:1433;database=Android;user=tyler@traffic-cam;password=Password!;");
+            Connection dbCon = DriverManager.getConnection("jdbc:jtds:sqlserver://traffic-cam.database.windows.net:1433;database=Android.dbo;user=tyler@traffic-cam;password=Password!;Initial Catalog=dbo");
             db = dbCon.toString();
+
             dbCon.close();
 
     } catch (Exception e)
