@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
 
     <application
         android:allowBackup="true"
@@ -20,7 +23,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DisplayCameraActivity" />
-        <activity android:name=".DisplayCameraActivity2"></activity>
+        <activity android:name=".DisplayCameraActivity2" />
+        <activity android:name=".CameraList"></activity>
     </application>
 
 </manifest>
