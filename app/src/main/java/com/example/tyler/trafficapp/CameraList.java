@@ -25,7 +25,6 @@ public class CameraList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera_list);
 
-
         //working with recyclerview in xml
         camList = (RecyclerView) findViewById(R.id.recyclerCam);
         camLayout = new LinearLayoutManager(this);
