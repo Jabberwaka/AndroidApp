@@ -9,6 +9,7 @@
     <uses-feature android:name="android.hardware.location.gps" />
 
     <application
+        android:exported="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -24,7 +25,13 @@
         </activity>
         <activity android:name=".DisplayCameraActivity" />
         <activity android:name=".DisplayCameraActivity2" />
-        <activity android:name=".CameraList"></activity>
+        <activity android:name=".CameraList">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
