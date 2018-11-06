@@ -1,69 +1,35 @@
 package com.example.tyler.trafficapp;
 
-import android.os.StrictMode;
+import android.content.Intent;
+import android.net.Uri;
+import android.support.customtabs.CustomTabsIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import android.widget.TextView;
 
 public class DisplayCameraActivity extends AppCompatActivity {
+
+    String cameraId, id;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent = getIntent();
+        cameraId = intent.getStringExtra("cameraId");
         setContentView(R.layout.activity_display_camera);
-        WebView myWebView = findViewById(R.id.webview);
-        WebSettings ws = myWebView.getSettings();
-        ws.setJavaScriptEnabled(true);
-
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
-        String db = null;
-        String url = null;
-        try {
-            Class.forName("net.sourceforge.jtds.jdbc.Driver");
-            Connection dbCon = DriverManager.getConnection("jdbc:jtds:sqlserver://traffic-cam.database.windows.net:1433/Android;user=tyler@traffic-cam;password=Password!;");
-            db = dbCon.toString();
-
-            Statement stmt = dbCon.createStatement();
-            String query = "SELECT cam_url FROM Traffic_Camera WHERE cam_id = 2;";
-            ResultSet rs = stmt.executeQuery(query);
-            if(rs.next()){
-                url = rs.getString(1);
-            }
-            myWebView.loadUrl(url);
-
-        }
-        catch (Exception e){
-            System.out.println(e.getMessage());
-        }
-
-
-
+        TextView tv = findViewById(R.id.textView5);
+        tv.setText("Please press back again to go to the camera list page.");
+        String url = ("https://traffic.ottawa.ca/opendata/camera?c="+cameraId+"&certificate=reingatsca531122018102&id=2");
+        CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+        CustomTabsIntent customTabsIntent = builder.build();
+        customTabsIntent.launchUrl(this, Uri.parse(url));
 
     }
 
-
-    public void viewWeb1(){
-        WebView myWebView = findViewById(R.id.webview);
-        WebSettings ws = myWebView.getSettings();
-        ws.setJavaScriptEnabled(true);
-        myWebView.loadUrl("http://beta.html5test.com/");
-    }
-
-
-    public void viewWeb2(){
-        WebView myWebView = findViewById(R.id.webview);
-        WebSettings ws = myWebView.getSettings();
-        ws.setJavaScriptEnabled(true);
-        myWebView.loadUrl("https://github.com/");
+    @Override
+    public void onBackPressed() {
+        this.finish();
     }
 
 }
