@@ -6,9 +6,6 @@ public class Camera {
     String latitude;
 
 
-
-
-
     public void fetch(){
 
 

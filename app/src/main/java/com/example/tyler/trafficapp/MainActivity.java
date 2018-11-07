@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         Button button3 = findViewById(R.id.button2);
 
 
+
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         String db = null;
