@@ -9,4 +9,6 @@
     <string name="satellite_map">satellite_map</string>
     <string name="terrain_map">terrain</string>
     <string name="dropped_pin">dropped_pin</string>
+    <string name="Camera_Map">Camera Map</string>
+
 </resources>
