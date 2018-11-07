@@ -21,7 +21,7 @@
         android:text="Camera2"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
@@ -39,45 +39,47 @@
         android:text="Camera"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="283dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--<TextView-->
+    <!--android:id="@+id/textView2"-->
+    <!--android:layout_width="283dp"-->
+    <!--android:layout_height="43dp"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:text="TextView"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/button"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.505"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintVertical_bias="0.433" />-->
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="23dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="8dp"
-        android:text="SQL Connection Name:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
-        android:typeface="normal"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="parent" />
+    <!--<TextView-->
+    <!--android:id="@+id/textView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="23dp"-->
+    <!--android:layout_marginStart="100dp"-->
+    <!--android:layout_marginBottom="40dp"-->
+    <!--android:text="SQL Connection Name:"-->
+    <!--android:textAppearance="@style/TextAppearance.AppCompat.Body2"-->
+    <!--android:textSize="18sp"-->
+    <!--android:textStyle="bold|italic"-->
+    <!--android:typeface="normal"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/textView2"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="120dp"
         android:text="Available Cameras"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18sp"
@@ -95,13 +97,28 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="4dp"
+        android:onClick="viewCamList"
         android:stateListAnimator="@mipmap/ic_launcher_round"
         android:text="List View"
-        android:onClick="viewCamList"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/buttonMap"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="247dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="320dp"
+        android:onClick="viewMap"
+        android:stateListAnimator="@mipmap/ic_launcher_round"
+        android:text="Camera Map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
 
 </android.support.constraint.ConstraintLayout>

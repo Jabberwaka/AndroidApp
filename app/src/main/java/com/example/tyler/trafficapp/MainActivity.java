@@ -1,5 +1,5 @@
 package com.example.tyler.trafficapp;
-
+import com.example.tyler.trafficapp.R;
 import android.content.Intent;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         Button button = findViewById(R.id.button);
         Button button2 = findViewById(R.id.button6);
         Button button3 = findViewById(R.id.button2);
+        Button MapButton = findViewById(R.id.buttonMap);
+
 
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -66,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
             button.setText(e.getMessage());
         }
 
-        TextView text = findViewById(R.id.textView2);
-        text.setText(SQLConnect()); //to prove sql server connected
+       // TextView text = findViewById(R.id.textView2);
+      //  text.setText(SQLConnect()); //to prove sql server connected
     }
     /** Called when the activity is about to become visible. */
     /*
@@ -127,6 +129,11 @@ public class MainActivity extends AppCompatActivity {
     public void viewCamera2(View view){
         Intent viewTraffic2 = new Intent(this, DisplayCameraActivity2.class);
         startActivity(viewTraffic2);
+    }
+
+    public void viewMap(View view){
+        Intent mapView = new Intent(this, MapsActivity.class);
+        startActivity(mapView);
     }
 
     public String SQLConnect(){
