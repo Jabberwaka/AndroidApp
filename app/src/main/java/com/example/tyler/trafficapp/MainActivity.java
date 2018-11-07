@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d(msg, "The onCreate() event");
 
+        // Get the Intent that started this activity and extract the string
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(LoginActivity.EXTRA_MESSAGE);
+
         Button button = findViewById(R.id.button);
         Button button2 = findViewById(R.id.button6);
         Button button3 = findViewById(R.id.button2);
@@ -67,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         TextView text = findViewById(R.id.textView2);
-        text.setText(SQLConnect()); //to prove sql server connected
+        text.setText(message); // Display the status of the user connected: (TODO) admin or standard
     }
     /** Called when the activity is about to become visible. */
     /*
