@@ -26,12 +26,6 @@ public class User {
             else{
                 passScramble.concat(Integer.toString(uP.charAt(i)+i));
             }
-
-            //salting
-            if(i == uP.length()/2){
-                passScramble.concat("0x00");
-            }
-
         }
         return passScramble;
     }
