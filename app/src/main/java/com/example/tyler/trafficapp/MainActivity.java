@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
        // Button button = findViewById(R.id.button);
        // Button button2 = findViewById(R.id.button6);
-        Button button3 = findViewById(R.id.button2);
+      //  Button button3 = findViewById(R.id.button2);
         Button MapButton = findViewById(R.id.buttonMap);
 
 
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             query = "SELECT COUNT(*) FROM Cameras;";
             rs = stmt.executeQuery(query);
             if(rs.next()){
-                button3.setText(rs.getString(1));
+               // button3.setText(rs.getString(1));
             }
 
              query = "SELECT cam_name FROM Traffic_Camera WHERE cam_id = 2;";

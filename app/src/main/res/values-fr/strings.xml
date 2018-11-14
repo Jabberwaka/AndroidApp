@@ -15,6 +15,8 @@
     <string name="recyclerCam">what ?</string>
     <string name="buttonMap">Carte des Cameras</string>
     <string name="textView3">Cameras Disponibles </string>
+    <string name="List_View">Liste de cameras</string>
+
     <string name="Project">Project - Programmation Entreprise Web</string>
 
 

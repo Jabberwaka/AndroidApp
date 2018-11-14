@@ -64,7 +64,7 @@ public class CameraList extends AppCompatActivity {
             int rows = 0;
 
             Statement stmt = dbCon.createStatement();
-            String query = "SELECT COUNT(*) FROM Cameras;";
+            String query = "SELECT COUNT(*) FROM CamerasFrench;";
             ResultSet rs = stmt.executeQuery(query);
             if(rs.next()){
                 rows = Integer.parseInt(rs.getString(1));           //gets the amount of rows in database
@@ -72,13 +72,18 @@ public class CameraList extends AppCompatActivity {
             //camInfo = new String[rows][4];
 
             stmt = dbCon.createStatement();
-            query = "SELECT * FROM Cameras;";
+            query = "SELECT * FROM CamerasFrench;";
             rs = stmt.executeQuery(query);
             while(rs.next()){  //goes through every row, puts the data into the 2d array
                 String cameraName = rs.getString("cam_name");
                 String cameraLong = rs.getString("cam_longitude");
                 String cameraLat = rs.getString("cam_latitude");
                 String cameraId = rs.getString("cam_id");
+                if (getResources().getConfiguration().locale.getLanguage() == "fr") {
+
+                    cameraName = rs.getString("cam_frName");
+
+                }
                 cameras.add(new Camera(cameraName, cameraId, cameraLong, cameraLat));
                 //i++;
                 //System.out.println("List Size: "+cameras.size());
