@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">trafficapp</string>
-    <string name="title_activity_maps">MyApp</string>
-    <string name="title">titre</string>
+    <string name="app_name">App de Traffic</string>
+    <string name="title_activity_maps">Mon Application</string>
+    <string name="title">Titre</string>
 
 
     <string name="normal_map">Carte</string>
@@ -10,5 +10,13 @@
     <string name="terrain_map">Terrain</string>
     <string name="dropped_pin">Position</string>
     <string name="Camera_Map">Carte de Cameras</string>
+
+    <string name="Camera_info">Camera Map</string>
+    <string name="recyclerCam">what ?</string>
+    <string name="buttonMap">Carte des Cameras</string>
+    <string name="textView3">Cameras Disponibles </string>
+
+
+
 
 </resources>

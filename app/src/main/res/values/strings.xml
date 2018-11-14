@@ -10,5 +10,12 @@
     <string name="terrain_map">terrain</string>
     <string name="dropped_pin">dropped_pin</string>
     <string name="Camera_Map">Camera Map</string>
+    <string name="Camera_info">Camera Map</string>
+    <string name="recyclerCam">What ??</string>
+
+    <string name="buttonMap">Camera Map</string>
+    <string name="textView3">Available Cameras</string>
+
+
 
 </resources>

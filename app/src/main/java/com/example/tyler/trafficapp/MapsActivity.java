@@ -1,10 +1,13 @@
 package com.example.tyler.trafficapp;
 
+import android.text.format.DateFormat;
 
 import java.sql.SQLData;
 import java.util.Locale;
+import java.util.Date;
 import java.lang.String;
 import java.util.List;
+import android.util.Log;
 import java.util.ArrayList;
 import java.util.ListIterator;
 import java.util.Iterator;
@@ -13,12 +16,15 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.SQLData;
+import java.io.IOException;
 import android.content.Intent;
+import com.google.android.gms.location.LocationListener;
+
 
 //import android.graphics.Camera;
 import android.annotation.SuppressLint;
 import android.location.Location;
-import android.location.LocationListener;
+//import android.location.LocationListener;
 import android.os.StrictMode;
 import android.support.v7.view.menu.MenuBuilder;
 import android.support.annotation.NonNull;
@@ -31,6 +37,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Build;
+import android.os.Looper;
 import android.support.v4.content.ContextCompat;
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -38,15 +45,22 @@ import android.content.pm.PackageManager;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.maps.GoogleMap;
 //import com.google.android.gms.maps.L;
+import com.google.android.gms.location.LocationListener;
 
 
-//import android.content.Context;
+import android.content.Context;
 //import android.os.Message;
 //import android.os.Bundle;
 //import android.util.Log;
 //import android.location.Location;
 //import android.location.LocationListener;
-//import android.location.LocationManager;
+import  android.location.Criteria;
+import  android.location.Geocoder;
+import android.location.Address;
+import android.location.SettingInjectorService;
+
+
+import android.location.LocationManager;
 //import android.widget.CursorAdapter;
 
 import android.webkit.WebSettings;
@@ -71,11 +85,21 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationSettingsRequest;
+import com.google.android.gms.location.SettingsClient;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.FusedLocationProviderClient;
+
+//import com.google.android.gms.location.LocationServices.;
+
+
 
 
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback,GoogleApiClient.ConnectionCallbacks,GoogleApiClient.OnConnectionFailedListener
-        ,LocationListener{
+        ,LocationListener,GoogleMap.OnMyLocationButtonClickListener,
+        GoogleMap.OnMyLocationClickListener {
     //private Context context;
     private GoogleMap googleMap;
     private MarkerOptions options = new MarkerOptions();
@@ -84,7 +108,14 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     LocationRequest mLocationRequest;
     Location mLastLocation;
     Marker mCurrLocationMarker;
+    //LocationSettingsRequest
 
+    protected Location mCurrentLocation;
+    protected String mLastUpdateTime;
+
+    public static final long UPDATE_INTERVAL_IN_MILLISECONDS = 5000;
+
+    public static final long FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS = UPDATE_INTERVAL_IN_MILLISECONDS / 5;
 
     private GoogleMap mMap;
     float zoom = 97 / 9;
@@ -95,23 +126,36 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
 
 
-    @SuppressLint("MissingPermission")
+        @SuppressLint("MissingPermission")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//FusedLocationProviderClient mFusedLocationClient;
 
-        setContentView(R.layout.activity_maps);
+            mLastUpdateTime = "";
+
+
+            setContentView(R.layout.activity_maps);
 
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+           // onConnected(savedInstanceState);
             checkLocationPermission();
         }
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
 
+
         mapFragment.getMapAsync(this);
+          //  mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+            //FusedLocationClient LocationServices.getFusedLocationProviderClient(this);
+           // checkPermissions();
+
 
     }
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -179,9 +223,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         ArrayList<String> cam_id = new ArrayList<String>();
         ArrayList<String> cam_name = new ArrayList<String>();
 
-      //  WebView myWebView = findViewById(R.id.buttonMap);
-       // WebSettings ws = myWebView.getSettings();
-      //  ws.setJavaScriptEnabled(true);
+        //  WebView myWebView = findViewById(R.id.buttonMap);
+        // WebSettings ws = myWebView.getSettings();
+        //  ws.setJavaScriptEnabled(true);
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
@@ -189,16 +233,16 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         try {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
             Connection dbCon = DriverManager.getConnection("jdbc:jtds:sqlserver://traffic-cam.database.windows.net:1433/Android;user=tyler@traffic-cam;password=Password!;");
-            db = dbCon.toString();
+            //db = dbCon.toString();
             int i = 0; //iterator
             int rows = 0;
 
             Statement stmt = dbCon.createStatement();
             String query = "SELECT COUNT(*) FROM Cameras;";
             ResultSet rs = stmt.executeQuery(query);
-            if (rs.next()) {
-                rows = Integer.parseInt(rs.getString(1));           //gets the amount of rows in database
-            }
+           // if (rs.next()) {
+           //     rows = Integer.parseInt(rs.getString(1));           //gets the amount of rows in database
+           // }
             //camInfo = new String[rows][4];
             // Cursor cursor = dbCon.createStatement();;
 
@@ -225,18 +269,20 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
 
         mMap = googleMap;
+
         //Initialize Google Play Services
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (ContextCompat.checkSelfPermission(this,
-                    Manifest.permission.ACCESS_FINE_LOCATION)
-                    == PackageManager.PERMISSION_GRANTED) {
+            if (checkLocationPermission()) {
                 buildGoogleApiClient();
                 mMap.setMyLocationEnabled(true);
+                mMap.setOnMyLocationButtonClickListener(this);
+                mMap.setOnMyLocationClickListener(this);
             }
-        }
-        else {
+        } else {
             buildGoogleApiClient();
             mMap.setMyLocationEnabled(true);
+            mMap.setOnMyLocationButtonClickListener(this);
+            mMap.setOnMyLocationClickListener(this);
         }
 
         latlngs.add(new LatLng(45.425533, -75.692482)); //some latitude and logitude value
@@ -245,7 +291,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         Iterator<String> iterator1 = cam_id.iterator();
         Iterator<String> iterator2 = cam_name.iterator();
 
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
 
             LatLng point = iterator.next();
             options.position(point);
@@ -256,86 +302,47 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             mMap.moveCamera(CameraUpdateFactory.newLatLng(point));
         }
         LatLng ottawa = new LatLng(45.425533, -75.692482);
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ottawa,zoom));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ottawa, zoom));
+        setMapLongClick(mMap);
+
+
+        }
+
+
+    protected synchronized void buildGoogleApiClient() {
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
+                .addApi(LocationServices.API)
+                .build();
+        mGoogleApiClient.connect();
 
     }
 
 
-    protected synchronized void buildGoogleApiClient () {
-            mGoogleApiClient = new GoogleApiClient.Builder(this)
-                    .addConnectionCallbacks(this)
-                    .addOnConnectionFailedListener(this)
-                    .addApi(LocationServices.API)
-                    .build();
-            mGoogleApiClient.connect();
-    }
-
-//
-//        @Override
-    public void onLocationChanged(Location location)
-    {
-//            mLastLocation = location;
-//            if (mCurrLocationMarker != null) {
-//                mCurrLocationMarker.remove();
-//            }
-//
-//            //Place current location marker
-//            LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
-//            MarkerOptions markerOptions = new MarkerOptions();
-//            markerOptions.position(latLng);
-//            markerOptions.title("Current Position");
-//            markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
-//            mCurrLocationMarker = mMap.addMarker(markerOptions);
-//
-//            //move map camera
-//            mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-//            mMap.animateCamera(CameraUpdateFactory.zoomTo(11));
-//
-//            //stop location updates
-//            if (mGoogleApiClient != null) {
-//
-//              //  LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
-//                LocationServices.getFusedLocationProviderClient(this);
-//            }
-    }
-
-
-    @Override
-    public void onStatusChanged(String provider, int status, Bundle extras) {
+        @Override
+     public void onLocationChanged(Location location)
+     {
+         mCurrentLocation = location;
+         mLastUpdateTime = DateFormat.getDateFormat(this).format(new Date());
+         Toast.makeText(this, location.toString() + "", Toast.LENGTH_SHORT).show();
 
     }
 
     @Override
-    public void onProviderEnabled(String provider) {
+    public void onConnected(Bundle connectionHint) {
 
-    }
-
-    @Override
-    public void onProviderDisabled(String provider) {
-
-    }
-
-    @Override
-    public void onConnected(@Nullable Bundle bundle) {
-
-//        mLocationRequest = new LocationRequest();
-//        mLocationRequest.setInterval(1000);
-//        mLocationRequest.setFastestInterval(1000);
-//        mLocationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
-//        if (ContextCompat.checkSelfPermission(this,
-//                Manifest.permission.ACCESS_FINE_LOCATION)
-//                == PackageManager.PERMISSION_GRANTED) {
-//          //  LocationServices.getFusedLocationProviderClient(this);
-//        }
     }
 
     @Override
     public void onConnectionSuspended(int i) {
-
+        Log.i("LocationFragment", "Connection suspended");
+        mGoogleApiClient.connect();
     }
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+        Log.i("LocationFragment", "Connection failed: ConnectionResult.getErrorCode() " + connectionResult.getErrorCode());
 
     }
 
@@ -486,5 +493,22 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     //return latitudes;
     //   }
 
+    @Override
+    public void onMyLocationClick(@NonNull Location location) {
+        Toast.makeText(this, "Current location:\n" + location, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "Current location:\n" + location, Toast.LENGTH_LONG).show();
 
+    }
+
+    @Override
+    public boolean onMyLocationButtonClick() {
+        Toast.makeText(this, "MyLocation button clicked", Toast.LENGTH_SHORT).show();
+        // Return false so that we don't consume the event and the default behavior still occurs
+        // (the camera animates to the user's current position).
+
+        return false;
+    }
 }
+
+
+

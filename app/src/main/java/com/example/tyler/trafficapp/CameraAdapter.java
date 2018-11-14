@@ -74,8 +74,8 @@ public class CameraAdapter extends RecyclerView.Adapter<CameraAdapter.ViewHolder
     @Override public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
-        View v = inflater.inflate(R.layout.text_view, parent, false);
-        ViewHolder holder = new ViewHolder(v);
+        View view = inflater.inflate(R.layout.text_view, parent, false);
+        ViewHolder holder = new ViewHolder(view);
         return holder;
     }
 
