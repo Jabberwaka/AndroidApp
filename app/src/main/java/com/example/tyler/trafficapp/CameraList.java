@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Locale;
 
 public class CameraList extends AppCompatActivity {
 
@@ -80,15 +79,6 @@ public class CameraList extends AppCompatActivity {
                 String cameraLong = rs.getString("cam_longitude");
                 String cameraLat = rs.getString("cam_latitude");
                 String cameraId = rs.getString("cam_id");
-                if (Locale.getDefault().getDisplayLanguage() == "fr" ) {
-
-                    cameraName.replaceAll("(?i)near", "près de");
-                    cameraName.replaceAll("&", "et");
-                    cameraName.replaceAll("(?i)between", "entre");
-                    cameraName.replaceAll("(?i)highway", "Autoroute");
-                    cameraName.replaceAll("(?i)hwy", "Autoroute");
-
-                }
                 cameras.add(new Camera(cameraName, cameraId, cameraLong, cameraLat));
                 //i++;
                 //System.out.println("List Size: "+cameras.size());

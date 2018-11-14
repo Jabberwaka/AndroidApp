@@ -7,179 +7,71 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-            <TextViewc
-            android:id="@+id/textView2"
-            android:layout_width="283dp"
-            android:layout_height="43dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:textStyle="bold"
-            android:text="@string/Project" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="283dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/Project"
+        android:textStyle="bold" />
 
 
-            <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginBottom="120dp"
-            android:text="@string/textView3"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textSize="18sp"
-            android:textStyle="bold|italic"
-            android:typeface="normal"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/textView3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal" />
+
 
     <Button
         android:id="@+id/buttonMap"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="247dp"
         android:layout_height="77dp"
-        android:layout_marginStart="8dp"
         android:onClick="viewMap"
         android:stateListAnimator="@mipmap/ic_launcher_round"
-        android:text="@string/Camera_Map" />
+        android:text="@string/Camera_Map"
+    android:layout_marginTop="1dp"/>
 
-            <Button
-            android:id="@+id/button2"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="247dp"
-            android:layout_height="77dp"
-            android:layout_marginStart="8dp"
-
-            android:onClick="viewCamList"
-            android:stateListAnimator="@mipmap/ic_launcher_round"
-            android:text="List View"/>
-
-
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="247dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="viewCamList"
+        android:stateListAnimator="@mipmap/ic_launcher_round"
+        android:text="List View" />
 
 
 </LinearLayout>
 
 
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--tools:context=".MainActivity"--><!--tools:layout_editor_absoluteY="81dp">-->
 
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--tools:context=".MainActivity"-->
-    <!--tools:layout_editor_absoluteY="81dp">-->
+    <!--<Button--><!--android:id="@+id/button6"--><!--style="@style/Widget.AppCompat.Button.Colored"--><!--android:layout_width="247dp"--><!--android:layout_height="77dp"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginTop="8dp"--><!--android:layout_marginEnd="8dp"--><!--android:layout_marginBottom="8dp"--><!--android:onClick="viewCamera"--><!--android:stateListAnimator="@mipmap/ic_launcher_round"--><!--android:text="Camera2"--><!--app:layout_constraintBottom_toTopOf="@+id/button2"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintHorizontal_bias="0.0"--><!--app:layout_constraintStart_toStartOf="parent"--><!--app:layout_constraintTop_toBottomOf="@+id/button" />-->
 
-    <!--<Button-->
-        <!--android:id="@+id/button6"-->
-        <!--style="@style/Widget.AppCompat.Button.Colored"-->
-        <!--android:layout_width="247dp"-->
-        <!--android:layout_height="77dp"-->
-        <!--android:layout_marginStart="8dp"-->
-        <!--android:layout_marginTop="8dp"-->
-        <!--android:layout_marginEnd="8dp"-->
-        <!--android:layout_marginBottom="8dp"-->
-        <!--android:onClick="viewCamera"-->
-        <!--android:stateListAnimator="@mipmap/ic_launcher_round"-->
-        <!--android:text="Camera2"-->
-        <!--app:layout_constraintBottom_toTopOf="@+id/button2"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintHorizontal_bias="0.0"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--app:layout_constraintTop_toBottomOf="@+id/button" />-->
+    <!--<Button--><!--android:id="@+id/button"--><!--style="@style/Widget.AppCompat.Button.Colored"--><!--android:layout_width="247dp"--><!--android:layout_height="77dp"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginTop="160dp"--><!--android:layout_marginEnd="8dp"--><!--android:layout_marginBottom="8dp"--><!--android:onClick="viewCamera2"--><!--android:stateListAnimator="@mipmap/ic_launcher_round"--><!--android:text="Camera"--><!--app:layout_constraintBottom_toTopOf="@+id/button6"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintHorizontal_bias="0.0"--><!--app:layout_constraintStart_toStartOf="parent"--><!--app:layout_constraintTop_toTopOf="parent"--><!--app:layout_constraintVertical_chainStyle="packed" />-->
 
-    <!--<Button-->
-        <!--android:id="@+id/button"-->
-        <!--style="@style/Widget.AppCompat.Button.Colored"-->
-        <!--android:layout_width="247dp"-->
-        <!--android:layout_height="77dp"-->
-        <!--android:layout_marginStart="8dp"-->
-        <!--android:layout_marginTop="160dp"-->
-        <!--android:layout_marginEnd="8dp"-->
-        <!--android:layout_marginBottom="8dp"-->
-        <!--android:onClick="viewCamera2"-->
-        <!--android:stateListAnimator="@mipmap/ic_launcher_round"-->
-        <!--android:text="Camera"-->
-        <!--app:layout_constraintBottom_toTopOf="@+id/button6"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintHorizontal_bias="0.0"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--app:layout_constraintTop_toTopOf="parent"-->
-        <!--app:layout_constraintVertical_chainStyle="packed" />-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/textView2"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="283dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="43dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginStart="8dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginTop="8dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginEnd="8dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginBottom="8dp"&ndash;&gt;--><!--&lt;!&ndash;android:text="TextView"&ndash;&gt;--><!--&lt;!&ndash;app:layout_constraintBottom_toTopOf="@+id/button"&ndash;&gt;--><!--&lt;!&ndash;app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;--><!--&lt;!&ndash;app:layout_constraintHorizontal_bias="0.505"&ndash;&gt;--><!--&lt;!&ndash;app:layout_constraintStart_toStartOf="parent"&ndash;&gt;--><!--&lt;!&ndash;app:layout_constraintTop_toTopOf="parent"&ndash;&gt;--><!--&lt;!&ndash;app:layout_constraintVertical_bias="0.433" />&ndash;&gt;-->
 
-    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
-    <!--&lt;!&ndash;android:id="@+id/textView2"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_width="283dp"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_height="43dp"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_marginStart="8dp"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_marginTop="8dp"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_marginEnd="8dp"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_marginBottom="8dp"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:text="TextView"&ndash;&gt;-->
-    <!--&lt;!&ndash;app:layout_constraintBottom_toTopOf="@+id/button"&ndash;&gt;-->
-    <!--&lt;!&ndash;app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-    <!--&lt;!&ndash;app:layout_constraintHorizontal_bias="0.505"&ndash;&gt;-->
-    <!--&lt;!&ndash;app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
-    <!--&lt;!&ndash;app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
-    <!--&lt;!&ndash;app:layout_constraintVertical_bias="0.433" />&ndash;&gt;-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/textView"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="23dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginStart="100dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginBottom="40dp"&ndash;&gt;--><!--&lt;!&ndash;android:text="SQL Connection Name:"&ndash;&gt;--><!--&lt;!&ndash;android:textAppearance="@style/TextAppearance.AppCompat.Body2"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="18sp"&ndash;&gt;--><!--&lt;!&ndash;android:textStyle="bold|italic"&ndash;&gt;--><!--&lt;!&ndash;android:typeface="normal"&ndash;&gt;--><!--&lt;!&ndash;app:layout_constraintBottom_toTopOf="@+id/textView2"&ndash;&gt;--><!--&lt;!&ndash;app:layout_constraintStart_toStartOf="parent" />&ndash;&gt;-->
 
-    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
-    <!--&lt;!&ndash;android:id="@+id/textView"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_height="23dp"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_marginStart="100dp"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_marginBottom="40dp"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:text="SQL Connection Name:"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:textAppearance="@style/TextAppearance.AppCompat.Body2"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:textSize="18sp"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:textStyle="bold|italic"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:typeface="normal"&ndash;&gt;-->
-    <!--&lt;!&ndash;app:layout_constraintBottom_toTopOf="@+id/textView2"&ndash;&gt;-->
-    <!--&lt;!&ndash;app:layout_constraintStart_toStartOf="parent" />&ndash;&gt;-->
+    <!--<TextView--><!--android:id="@+id/textView3"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginStart="100dp"--><!--android:layout_marginBottom="120dp"--><!--android:text="@string/textView3"--><!--android:textAppearance="@style/TextAppearance.AppCompat.Body2"--><!--android:textSize="18sp"--><!--android:textStyle="bold|italic"--><!--android:typeface="normal"--><!--app:layout_constraintBottom_toTopOf="@+id/button"--><!--app:layout_constraintStart_toStartOf="parent" />-->
 
-    <!--<TextView-->
-        <!--android:id="@+id/textView3"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginStart="100dp"-->
-        <!--android:layout_marginBottom="120dp"-->
-        <!--android:text="@string/textView3"-->
-        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body2"-->
-        <!--android:textSize="18sp"-->
-        <!--android:textStyle="bold|italic"-->
-        <!--android:typeface="normal"-->
-        <!--app:layout_constraintBottom_toTopOf="@+id/button"-->
-        <!--app:layout_constraintStart_toStartOf="parent" />-->
+    <!--<Button--><!--android:id="@+id/button2"--><!--style="@style/Widget.AppCompat.Button.Colored"--><!--android:layout_width="247dp"--><!--android:layout_height="77dp"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginTop="8dp"--><!--android:layout_marginEnd="8dp"--><!--android:layout_marginBottom="4dp"--><!--android:onClick="viewCamList"--><!--android:stateListAnimator="@mipmap/ic_launcher_round"--><!--android:text="List View"--><!--app:layout_constraintBottom_toBottomOf="parent"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintHorizontal_bias="0.0"--><!--app:layout_constraintStart_toStartOf="parent"--><!--app:layout_constraintTop_toBottomOf="@+id/button6" />-->
 
-    <!--<Button-->
-        <!--android:id="@+id/button2"-->
-        <!--style="@style/Widget.AppCompat.Button.Colored"-->
-        <!--android:layout_width="247dp"-->
-        <!--android:layout_height="77dp"-->
-        <!--android:layout_marginStart="8dp"-->
-        <!--android:layout_marginTop="8dp"-->
-        <!--android:layout_marginEnd="8dp"-->
-        <!--android:layout_marginBottom="4dp"-->
-        <!--android:onClick="viewCamList"-->
-        <!--android:stateListAnimator="@mipmap/ic_launcher_round"-->
-        <!--android:text="List View"-->
-        <!--app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintHorizontal_bias="0.0"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--app:layout_constraintTop_toBottomOf="@+id/button6" />-->
+    <!--<Button--><!--android:id="@+id/buttonMap"--><!--style="@style/Widget.AppCompat.Button.Colored"--><!--android:layout_width="247dp"--><!--android:layout_height="77dp"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginBottom="320dp"--><!--android:onClick="viewMap"--><!--android:stateListAnimator="@mipmap/ic_launcher_round"--><!--android:text="@string/Camera_Map"--><!--app:layout_constraintBottom_toBottomOf="parent"--><!--app:layout_constraintStart_toStartOf="parent"--><!--app:layout_constraintTop_toTopOf="parent"--><!--app:layout_constraintVertical_bias="0.973" />-->
 
-    <!--<Button-->
-        <!--android:id="@+id/buttonMap"-->
-        <!--style="@style/Widget.AppCompat.Button.Colored"-->
-        <!--android:layout_width="247dp"-->
-        <!--android:layout_height="77dp"-->
-        <!--android:layout_marginStart="8dp"-->
-        <!--android:layout_marginBottom="320dp"-->
-        <!--android:onClick="viewMap"-->
-        <!--android:stateListAnimator="@mipmap/ic_launcher_round"-->
-        <!--android:text="@string/Camera_Map"-->
-        <!--app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--app:layout_constraintTop_toTopOf="parent"-->
-        <!--app:layout_constraintVertical_bias="0.973" />-->
-
-<!--</android.support.constraint.ConstraintLayout>-->
+    <!--</android.support.constraint.ConstraintLayout>-->
