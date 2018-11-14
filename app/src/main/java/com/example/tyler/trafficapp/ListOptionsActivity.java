@@ -1,0 +1,154 @@
+package com.example.tyler.trafficapp;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.StrictMode;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class ListOptionsActivity extends Activity {
+    String msg = "Android : "; //Added to implement logging functionality
+
+    /** Called when the activity is first created. */
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_list_options);
+        Log.d(msg, "The onCreate() event");
+
+        // Get the Intent that started this activity and extract the string
+        Intent intent = getIntent();
+        //String message = intent.getStringExtra(ListCamerasActivity.EXTRA_MESSAGE);
+
+        Button button = findViewById(R.id.button);
+        Button button2 = findViewById(R.id.button6);
+        Button button3 = findViewById(R.id.button2);
+
+
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+        String db = null;
+        try {
+            Class.forName("net.sourceforge.jtds.jdbc.Driver");
+            Connection dbCon = DriverManager.getConnection("jdbc:jtds:sqlserver://traffic-cam.database.windows.net:1433/Android;user=tyler@traffic-cam;password=Password!;");
+            db = dbCon.toString();
+
+            Statement stmt = dbCon.createStatement();
+            String query = "SELECT cam_name FROM Traffic_Camera WHERE cam_id = 1;";
+            ResultSet rs = stmt.executeQuery(query);
+            if(rs.next()){
+                String name = rs.getString(1);
+                button.setText(name);
+            }
+
+            query = "SELECT COUNT(*) FROM Cameras;";
+            rs = stmt.executeQuery(query);
+            if(rs.next()){
+                button3.setText(rs.getString(1));
+            }
+
+            query = "SELECT cam_name FROM Traffic_Camera WHERE cam_id = 2;";
+            rs = stmt.executeQuery(query);
+            if(rs.next()){
+                String name = rs.getString(1);
+                button2.setText(name);
+            }
+
+        }
+        catch (Exception e){
+            button.setText(e.getMessage());
+        }
+
+        TextView text = findViewById(R.id.textView2);
+        text.setText("FixMe"); // Display the status of the user connected: (TODO) admin or standard
+    }
+    /** Called when the activity is about to become visible. */
+    /*
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(msg, "The onStart() event");
+    }
+    */
+
+    /** Called when the activity has become visible. */
+    /*
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(msg, "The onResume() event");
+    }
+    */
+
+    /** Called when another activity is taking focus. */
+    /*
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(msg, "The onPause() event");
+    }
+    */
+
+    /** Called when the activity is no longer visible. */
+    /*
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(msg, "The onStop() event");
+    }
+    */
+
+    /** Called just before the activity is destroyed. */
+    /*
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(msg, "The onDestroy() event");
+    }
+    */
+
+    public void viewCamList(View view){
+        Intent viewCameras = new Intent(this, CameraList.class);
+        startActivity(viewCameras);
+    }
+
+    public void viewCamera(View view){
+        Intent viewTraffic = new Intent(this, DisplayCameraActivity.class);
+        startActivity(viewTraffic);
+    }
+
+    public void viewCamera2(View view){
+        Intent viewTraffic2 = new Intent(this, DisplayCameraActivity2.class);
+        startActivity(viewTraffic2);
+    }
+
+    public String SQLConnect(){
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+        String db = null;
+        try{
+            Class.forName("net.sourceforge.jtds.jdbc.Driver");
+            Connection dbCon = DriverManager.getConnection("jdbc:jtds:sqlserver://traffic-cam.database.windows.net:1433;database=Android.dbo;user=tyler@traffic-cam;password=Password!;Initial Catalog=dbo");
+            db = dbCon.toString();
+
+            dbCon.close();
+
+        } catch (Exception e)
+        {
+            db = e.getMessage();
+        }
+
+        return db;
+    }
+}
