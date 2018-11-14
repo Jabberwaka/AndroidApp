@@ -1,107 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button6"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="247dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="viewCamera"
-        android:stateListAnimator="@mipmap/ic_launcher_round"
-        android:text="Camera2"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_login"/>
 
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="247dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="viewCamera2"
-        android:stateListAnimator="@mipmap/ic_launcher_round"
-        android:text="Camera"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"></LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="283dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="23dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="8dp"
-        android:text="SQL Connection Name:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
-        android:typeface="normal"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/login_textView_loginScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="16dp"
-        android:text="Available Cameras"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
-        android:typeface="normal"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="@string/login_textView_loginScreen"
+        android:textColor="@android:color/white"
+        android:fontFamily="cursive"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"
+        />
 
-    <Button
-        android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="247dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="4dp"
-        android:onClick="viewCamList"
-        android:stateListAnimator="@mipmap/ic_launcher_round"
-        android:text="List View"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="150dp"
+        android:layout_height="60dp"
+        tools:src="@tools:sample/backgrounds/scenic"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/login_edittext_username"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="@string/login_usernameHint"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="2dp"
+            android:background="@drawable/editedtext_bg"
+            android:layout_marginTop="150dp"
+            android:textColorHint="#a3a1a1"/>
+
+        <EditText
+            android:id="@+id/login_edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/login_passwordHint"
+            android:drawableLeft="@drawable/ic_security_black_24dp"
+            android:drawablePadding="2dp"
+            android:background="@drawable/editedtext_bg"
+            android:inputType="textPassword"
+            android:textColorHint="#a3a1a1"/>
+
+        <Button
+            android:id="@+id/login_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:drawableLeft="@drawable/ic_sign_in"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="adminUser"
+            android:text="@string/login_button_login"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/login_button_regUser"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/signup_bg"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="standardUser"
+
+            android:text="@string/login_button_regUser"
+            android:textColor="#ef388a"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

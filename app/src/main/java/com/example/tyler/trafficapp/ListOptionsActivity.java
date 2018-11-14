@@ -71,7 +71,7 @@ public class ListOptionsActivity extends Activity {
         }
 
         TextView text = findViewById(R.id.textView2);
-        text.setText("FixMe"); // Display the status of the user connected: (TODO) admin or standard
+        text.setText(intent.getStringExtra(MainActivity.EXTRA_MESSAGE)); // Display the status of the user connected: (TODO) admin or standard
     }
     /** Called when the activity is about to become visible. */
     /*
