@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">trafficapp</string>
+    <string name="app_name">Ottawa Traffic Cameras</string>
     <string name="title_activity_maps">MyApp</string>
     <string name="title">title</string>
+    <string name="back_info">Please press back again to go to the camera list page.</string>
 
 
     <string name="normal_map">Map</string>

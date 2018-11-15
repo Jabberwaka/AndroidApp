@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">App de Traffic</string>
+    <string name="app_name">Les Cameras de Traffic d\'Ottawa</string>
     <string name="title_activity_maps">Mon Application</string>
     <string name="title">Titre</string>
-
+    <string name="back_info">Veuillez appuyer le bouton de retour pour retourner à la liste des caméras.</string>
 
     <string name="normal_map">Carte</string>
     <string name="hybrid_map">Hybride</string>

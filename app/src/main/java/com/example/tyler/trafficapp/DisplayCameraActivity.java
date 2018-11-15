@@ -19,7 +19,7 @@ public class DisplayCameraActivity extends AppCompatActivity {
         cameraId = intent.getStringExtra("cameraId");
         setContentView(R.layout.activity_display_camera);
         TextView tv = findViewById(R.id.textView5);
-        tv.setText("Please press back again to go to the camera list page.");
+        //tv.setText("Please press back again to go to the camera list page.");
         String url = ("https://traffic.ottawa.ca/opendata/camera?c="+cameraId+"&certificate=reingatsca531122018102&id=2");
         CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
         CustomTabsIntent customTabsIntent = builder.build();
