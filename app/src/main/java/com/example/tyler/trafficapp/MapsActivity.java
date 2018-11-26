@@ -137,10 +137,10 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
             setContentView(R.layout.activity_maps);
 
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-           // onConnected(savedInstanceState);
-            checkLocationPermission();
-        }
+//        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//           // onConnected(savedInstanceState);
+//            checkLocationPermission();
+//        }
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -246,7 +246,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             //camInfo = new String[rows][4];
             // Cursor cursor = dbCon.createStatement();;
 
-            stmt = dbCon.createStatement();
+           // stmt = dbCon.createStatement();
             query = "SELECT * FROM Cameras;";
             rs = stmt.executeQuery(query);
             while (rs.next()) {  //goes through every row, puts the data into the 2d array

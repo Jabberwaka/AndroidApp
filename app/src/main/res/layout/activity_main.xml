@@ -54,6 +54,18 @@
         android:stateListAnimator="@mipmap/ic_launcher_round"
         android:text="@string/List_View" />
 
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="247dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="viewJSON"
+        android:stateListAnimator="@mipmap/ic_launcher_round"
+        android:text="@string/Json_View" />
+
 
 </LinearLayout>
 

@@ -59,7 +59,7 @@ public class CameraList extends AppCompatActivity {
         try {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
             Connection dbCon = DriverManager.getConnection("jdbc:jtds:sqlserver://traffic-cam.database.windows.net:1433/Android;user=tyler@traffic-cam;password=Password!;");
-            db = dbCon.toString();
+           // db = dbCon.toString();
             int i = 0; //iterator
             int rows = 0;
 
@@ -79,10 +79,9 @@ public class CameraList extends AppCompatActivity {
                 String cameraLong = rs.getString("cam_longitude");
                 String cameraLat = rs.getString("cam_latitude");
                 String cameraId = rs.getString("cam_id");
+
                 if (getResources().getConfiguration().locale.getLanguage() == "fr") {
-
                     cameraName = rs.getString("cam_frName");
-
                 }
                 cameras.add(new Camera(cameraName, cameraId, cameraLong, cameraLat));
                 //i++;
@@ -101,7 +100,6 @@ public class CameraList extends AppCompatActivity {
                 }
             });
         }
-
         return cameras;
     }
 }

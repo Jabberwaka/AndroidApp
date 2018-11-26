@@ -17,6 +17,8 @@
     <string name="textView3">Cameras Disponibles </string>
     <string name="List_View">Liste de cameras</string>
 
+    <string name="Json_View">JSON Liste de cameras Json</string>
+
     <string name="Project">Project - Programmation Entreprise Web</string>
 
 

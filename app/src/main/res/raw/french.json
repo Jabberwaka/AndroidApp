@@ -1,0 +1,1745 @@
+[
+	{
+		"cam_id": "243",
+		"cam_name": "Parkdale & Scott",
+		"cam_latitude": "45.404901",
+		"cam_longitude": "-75.731614",
+		"cam_frName": "Parkdale et Scott"
+	},
+	{
+		"cam_id": "246",
+		"cam_name": "Fallowfield & Barrhaven Crossing",
+		"cam_latitude": "45.293827",
+		"cam_longitude": "-75.743212",
+		"cam_frName": "Fallowfield et Barrhaven Crossing"
+	},
+	{
+		"cam_id": "283",
+		"cam_name": "Montreal & Shefford",
+		"cam_latitude": "45.450016",
+		"cam_longitude": "-75.588173",
+		"cam_frName": "Montreal et Shefford"
+	},
+	{
+		"cam_id": "290",
+		"cam_name": "Chapel & Rideau",
+		"cam_latitude": "45.430816",
+		"cam_longitude": "-75.680901",
+		"cam_frName": "Chapel et Rideau"
+	},
+	{
+		"cam_id": "1000",
+		"cam_name": "Baseline & Greenbank",
+		"cam_latitude": "445.340963",
+		"cam_longitude": "-75.787972",
+		"cam_frName": "Baseline et Greenbank"
+	},
+	{
+		"cam_id": "2005",
+		"cam_name": "(MTO) Hwy 417 between Holland Ave and Parkdale Ave",
+		"cam_latitude": "45.3959660",
+		"cam_longitude": "-75.7293210",
+		"cam_frName": "(MTO) Autoroute 417 entre l'avenue Holland et l'avenue Parkdale"
+	},
+	{
+		"cam_id": "2006",
+		"cam_name": "(MTO) Hwy 417 near Carling Ave",
+		"cam_latitude": "45.3860520",
+		"cam_longitude": "-75.7370850",
+		"cam_frName": "(MTO) Autoroute 417 près de l'avenue Carling"
+	},
+	{
+		"cam_id": "2007",
+		"cam_name": "(MTO) Hwy 417 near Churchill Ave",
+		"cam_latitude": "45.3795680",
+		"cam_longitude": "-75.7454380",
+		"cam_frName": "(MTO) Autoroute 417 près de l'avenue Churchill"
+	},
+	{
+		"cam_id": "2008",
+		"cam_name": "(MTO) Hwy 417 near Woodroffe Ave",
+		"cam_latitude": "45.3610070",
+		"cam_longitude": "-75.7679950",
+		"cam_frName": "(MTO) Autoroute 417 près de l'avenue Woodroffe"
+	},
+	{
+		"cam_id": "2009",
+		"cam_name": "(MTO) Hwy 417 near Pinecrest Rd",
+		"cam_latitude": "45.3490090",
+		"cam_longitude": "-75.7901390",
+		"cam_frName": "(MTO) Autoroute 417 près le chemin Pinecrest"
+	},
+	{
+		"cam_id": "2011",
+		"cam_name": "(MTO) South of Hwy 417 between Hwy 416 and Richmond Rd",
+		"cam_latitude": "45.3449070",
+		"cam_longitude": "-75.8077940",
+		"cam_frName": "(MTO) Sud de l'autoroute 417 entre l'autoroute 416 et le chemin Richmond"
+	},
+	{
+		"cam_id": "2014",
+		"cam_name": "(MTO) Hwy 417 near Walkley Rd",
+		"cam_latitude": "45.3981000",
+		"cam_longitude": "-75.5928640",
+		"cam_frName": "(MTO) Autoroute 417 près du chemin Walkley"
+	},
+	{
+		"cam_id": "2015",
+		"cam_name": "(MTO) Hwy 417 near Innes Rd",
+		"cam_latitude": "45.4139540",
+		"cam_longitude": "-75.6109570",
+		"cam_frName": "(MTO) Autoroute 417 près du chemin Innes"
+	},
+	{
+		"cam_id": "2016",
+		"cam_name": "(MTO) Hwy 417 near Aviation Parkway",
+		"cam_latitude": "45.4240530",
+		"cam_longitude": "-75.6194790",
+		"cam_frName": "(MTO) Autoroute 417 près de la promenade Aviation"
+	},
+	{
+		"cam_id": "2017",
+		"cam_name": "(MTO) Hwy 417 near Hwy 174",
+		"cam_latitude": "45.4237420",
+		"cam_longitude": "-75.6205810",
+		"cam_frName": "(MTO) Autoroute 417 près de autoroute 174"
+	},
+	{
+		"cam_id": "2018",
+		"cam_name": "(MTO) Hwy 417 near St Laurent Blvd",
+		"cam_latitude": "45.4200180",
+		"cam_longitude": "-75.6355400",
+		"cam_frName": "(MTO) Autoroute 417 près de le boulevard St Laurent"
+	},
+	{
+		"cam_id": "2019",
+		"cam_name": "(MTO) Hwy 417 Near Belfast Rd",
+		"cam_latitude": "45.4191780",
+		"cam_longitude": "-75.6472740",
+		"cam_frName": "(MTO) Autoroute 417 près du chemin Belfast"
+	},
+	{
+		"cam_id": "2020",
+		"cam_name": "(MTO) Hwy 417 near Vanier Parkway",
+		"cam_latitude": "45.4172570",
+		"cam_longitude": "-75.6567280",
+		"cam_frName": "(MTO) Autoroute 417 près de la promenade Vanier"
+	},
+	{
+		"cam_id": "2021",
+		"cam_name": "(MTO) Hwy 417 near Lees Ave",
+		"cam_latitude": "45.4168835",
+		"cam_longitude": "-75.6739088",
+		"cam_frName": "(MTO) Autoroute 417 près de l'avenue Lees"
+	},
+	{
+		"cam_id": "2022",
+		"cam_name": "(MTO) Hwy 417 near O’Connor St",
+		"cam_latitude": "45.4101370",
+		"cam_longitude": "-75.6886760",
+		"cam_frName": "(MTO) Autoroute 417 près de la rue O'Connor"
+	},
+	{
+		"cam_id": "2023",
+		"cam_name": "(MTO) Hwy 417 near Bronson Ave",
+		"cam_latitude": "45.4046730",
+		"cam_longitude": "-75.7021510",
+		"cam_frName": "(MTO) Autoroute 417 près de l'avenue Bronson"
+	},
+	{
+		"cam_id": "2024",
+		"cam_name": "(MTO) Hwy 417 west of Holly Acres Rd",
+		"cam_latitude": "45.3439200",
+		"cam_longitude": "75.8153150",
+		"cam_frName": "(MTO) Autoroute 417 à l'ouest du chemin Holly Acres"
+	},
+	{
+		"cam_id": "2025",
+		"cam_name": "(MTO) Hwy 416 NB ramp to Hwy 417 East",
+		"cam_latitude": "45.3413430",
+		"cam_longitude": "-75.8146700",
+		"cam_frName": "(MTO) Autoroute 416 bretelle vers autoroute 417 est"
+	},
+	{
+		"cam_id": "2026",
+		"cam_name": "(MTO) Hwy 417 east of Moodie Drive",
+		"cam_latitude": "45.3419190",
+		"cam_longitude": "-75.8267340",
+		"cam_frName": "(MTO) Autoroute 417 à l'est de la promenade Moodie"
+	},
+	{
+		"cam_id": "2027",
+		"cam_name": "(MTO) Hwy 417 near Moodie Drive",
+		"cam_latitude": "45.3376770",
+		"cam_longitude": "-75.8422310",
+		"cam_frName": "(MTO) Autoroute 417 près de la promenade Moodie"
+	},
+	{
+		"cam_id": "2028",
+		"cam_name": "(MTO) Hwy 417 west of Moodie Drive",
+		"cam_latitude": "45.3298260",
+		"cam_longitude": "-75.8616400",
+		"cam_frName": "(MTO) Autoroute 417 à l'ouest de la promenade Moodie"
+	},
+	{
+		"cam_id": "2029",
+		"cam_name": "(MTO) Hwy 417 east of Eagleson Rd",
+		"cam_latitude": "45.3265470",
+		"cam_longitude": "-75.8697820",
+		"cam_frName": "(MTO) Autoroute 417 à l'est du chemin Eagleson"
+	},
+	{
+		"cam_id": "2031",
+		"cam_name": "(MTO) Hwy 417 near Kanata Ave",
+		"cam_latitude": "45.3107710",
+		"cam_longitude": "-75.9020630",
+		"cam_frName": "(MTO) Autoroute 417 près de l'avenue Kanata"
+	},
+	{
+		"cam_id": "2032",
+		"cam_name": "(MTO) Hwy 417 near Terry Fox Drive",
+		"cam_latitude": "45.3050970",
+		"cam_longitude": "-75.9113130",
+		"cam_frName": "(MTO) Autoroute 417 près de la promenade Terry Fox"
+	},
+	{
+		"cam_id": "2033",
+		"cam_name": "(MTO) Hwy 417 near Palladium Drive",
+		"cam_latitude": "45.2931940",
+		"cam_longitude": "-75.9372410",
+		"cam_frName": "(MTO) Autoroute 417 près de la promenade Palladium"
+	},
+	{
+		"cam_id": "2034",
+		"cam_name": "(MTO) Hwy 417 near Carp Rd",
+		"cam_latitude": "45.2808010",
+		"cam_longitude": "-75.9568640",
+		"cam_frName": "(MTO) Autoroute 417 près le chemin Carp"
+	},
+	{
+		"cam_id": "2035",
+		"cam_name": "(MTO) Hwy 417 near Hwy 7",
+		"cam_latitude": "45.2710370",
+		"cam_longitude": "-75.9746250",
+		"cam_frName": "(MTO) Autoroute 417 près de autoroute 7"
+	},
+	{
+		"cam_id": "2037",
+		"cam_name": "(MTO) Hwy 417 near Bayswater Ave",
+		"cam_latitude": "45.4009640",
+		"cam_longitude": "-75.7179020",
+		"cam_frName": "(MTO) Autoroute 417 près de l'avenue Bayswater"
+	},
+	{
+		"cam_id": "120",
+		"cam_name": "Greenbank & Strandherd",
+		"cam_latitude": "45.270529",
+		"cam_longitude": "-75.746377",
+		"cam_frName": "Greenbank et Strandherd"
+	},
+	{
+		"cam_id": "121",
+		"cam_name": "Sheffield & Walkley",
+		"cam_latitude": "45.395439",
+		"cam_longitude": "-75.600074",
+		"cam_frName": "Sheffield et Walkley"
+	},
+	{
+		"cam_id": "122",
+		"cam_name": "Riocan & Strandherd",
+		"cam_latitude": "45.271906",
+		"cam_longitude": "-75.743242",
+		"cam_frName": "Riocan et Strandherd"
+	},
+	{
+		"cam_id": "123",
+		"cam_name": "Bank & Laurier",
+		"cam_latitude": "45.418549",
+		"cam_longitude": "-75.699060",
+		"cam_frName": "Bank et Laurier"
+	},
+	{
+		"cam_id": "124",
+		"cam_name": "Churchill & Richmond",
+		"cam_latitude": "45.392155",
+		"cam_longitude": "-75.753809",
+		"cam_frName": "Churchill et Richmond"
+	},
+	{
+		"cam_id": "125",
+		"cam_name": "Carp & Hazeldean",
+		"cam_latitude": "45.267755",
+		"cam_longitude": "-75.939204",
+		"cam_frName": "Carp et Hazeldean"
+	},
+	{
+		"cam_id": "126",
+		"cam_name": "Campeau & Terry Fox",
+		"cam_latitude": "45.309590",
+		"cam_longitude": "-75.917772",
+		"cam_frName": "Campeau et Terry Fox"
+	},
+	{
+		"cam_id": "127",
+		"cam_name": "Hazeldean & Huntmar",
+		"cam_latitude": "45.283089",
+		"cam_longitude": "-75.911772",
+		"cam_frName": "Hazeldean et Huntmar"
+	},
+	{
+		"cam_id": "128",
+		"cam_name": "Parkdale & Westmount",
+		"cam_latitude": "45.397706",
+		"cam_longitude": "-75.727273",
+		"cam_frName": "Parkdale et Westmount"
+	},
+	{
+		"cam_id": "129",
+		"cam_name": "Albion & Lester",
+		"cam_latitude": "45.337714",
+		"cam_longitude": "-75.633703",
+		"cam_frName": "Albion et Lester"
+	},
+	{
+		"cam_id": "130",
+		"cam_name": "King Edward & Mann",
+		"cam_latitude": "45.419011",
+		"cam_longitude": "-75.677358",
+		"cam_frName": "King Edward et Mann"
+	},
+	{
+		"cam_id": "131",
+		"cam_name": "Industrial & Riverside",
+		"cam_latitude": "45.412186",
+		"cam_longitude": "-75.658399",
+		"cam_frName": "Industrial et Riverside"
+	},
+	{
+		"cam_id": "132",
+		"cam_name": "Bayshore & Carling",
+		"cam_latitude": "45.353714",
+		"cam_longitude": "-75.808210",
+		"cam_frName": "Bayshore et Carling"
+	},
+	{
+		"cam_id": "134",
+		"cam_name": "Carp & Highway 417",
+		"cam_latitude": "45.282034",
+		"cam_longitude": "-75.958480",
+		"cam_frName": "Carp et Autoroute 417"
+	},
+	{
+		"cam_id": "135",
+		"cam_name": "Bank & Leitrim",
+		"cam_latitude": "45.330995",
+		"cam_longitude": "-75.599826",
+		"cam_frName": "Bank et Leitrim"
+	},
+	{
+		"cam_id": "136",
+		"cam_name": "Bridge/Mitch Owens & River",
+		"cam_latitude": "45.233910",
+		"cam_longitude": "-75.675958",
+		"cam_frName": "Bridge/Mitch Owens et River"
+	},
+	{
+		"cam_id": "137",
+		"cam_name": "March & Terry Fox",
+		"cam_latitude": "45.349130",
+		"cam_longitude": "-75.924920",
+		"cam_frName": "March et Terry Fox"
+	},
+	{
+		"cam_id": "138",
+		"cam_name": "Klondike & March",
+		"cam_latitude": "45.355101",
+		"cam_longitude": "-75.932468",
+		"cam_frName": "Klondike et March"
+	},
+	{
+		"cam_id": "139",
+		"cam_name": "Bridle Path/Daze & Hunt Club",
+		"cam_latitude": "45.351548",
+		"cam_longitude": "-75.651438",
+		"cam_frName": "Bridle Path/Daze et Hunt Club"
+	},
+	{
+		"cam_id": "140",
+		"cam_name": "March & Maxwell Bridge/Old Carp",
+		"cam_latitude": "45.358362",
+		"cam_longitude": "-75.936675",
+		"cam_frName": "March et Maxwell Bridge/Old Carp"
+	},
+	{
+		"cam_id": "141",
+		"cam_name": "Montreal & Ogilvie",
+		"cam_latitude": "45.447339",
+		"cam_longitude": "-75.594177",
+		"cam_frName": "Montreal et Ogilvie"
+	},
+	{
+		"cam_id": "142",
+		"cam_name": "Earl Armstrong & Limebank",
+		"cam_latitude": "45.280540",
+		"cam_longitude": "-75.666913",
+		"cam_frName": "Earl Armstrong et Limebank"
+	},
+	{
+		"cam_id": "143",
+		"cam_name": "Earl Armstrong & River",
+		"cam_latitude": "45.269284",
+		"cam_longitude": "-75.699937",
+		"cam_frName": "Earl Armstrong et River"
+	},
+	{
+		"cam_id": "144",
+		"cam_name": "Bank & Findlay Creek",
+		"cam_latitude": "45.320479",
+		"cam_longitude": "-75.593787",
+		"cam_frName": "Bank et Findlay Creek"
+	},
+	{
+		"cam_id": "145",
+		"cam_name": "Highway 174 & Cameron",
+		"cam_latitude": "45.518277",
+		"cam_longitude": "-75.411210",
+		"cam_frName": "Autoroute 174 et Cameron"
+	},
+	{
+		"cam_id": "146",
+		"cam_name": "Cyrville & Innes",
+		"cam_latitude": "45.416489",
+		"cam_longitude": "-75.602432",
+		"cam_frName": "Cyrville et Innes"
+	},
+	{
+		"cam_id": "147",
+		"cam_name": "Cummings & Ogilvie",
+		"cam_latitude": "45.426016",
+		"cam_longitude": "-75.631685",
+		"cam_frName": "Cummings et Ogilvie"
+	},
+	{
+		"cam_id": "149",
+		"cam_name": "Carling & Transitway",
+		"cam_latitude": "45.365768",
+		"cam_longitude": "-75.780776",
+		"cam_frName": "Carling et Transitway"
+	},
+	{
+		"cam_id": "150",
+		"cam_name": "Greenbank & Iris",
+		"cam_latitude": "45.347601",
+		"cam_longitude": "-75.788774",
+		"cam_frName": "Greenbank et Iris"
+	},
+	{
+		"cam_id": "151",
+		"cam_name": "Bank & Chamberlain",
+		"cam_latitude": "45.408486",
+		"cam_longitude": "-75.691488",
+		"cam_frName": "Bank et Chamberlain"
+	},
+	{
+		"cam_id": "152",
+		"cam_name": "Bank & First",
+		"cam_latitude": "45.404422",
+		"cam_longitude": "-75.689150",
+		"cam_frName": "Bank et First"
+	},
+	{
+		"cam_id": "153",
+		"cam_name": "Gilligan & Leitrim",
+		"cam_latitude": "45.317358",
+		"cam_longitude": "-75.630413",
+		"cam_frName": "Gilligan et Leitrim"
+	},
+	{
+		"cam_id": "154",
+		"cam_name": "Slack & Woodroffe",
+		"cam_latitude": "45.317209",
+		"cam_longitude": "-75.741892",
+		"cam_frName": "Slack et Woodroffe"
+	},
+	{
+		"cam_id": "155",
+		"cam_name": "Merivale & Slack",
+		"cam_latitude": "45.325897",
+		"cam_longitude": "-75.719037",
+		"cam_frName": "Merivale et Slack"
+	},
+	{
+		"cam_id": "156",
+		"cam_name": "Hunt Club & Knoxdale",
+		"cam_latitude": "45.322846",
+		"cam_longitude": "-75.772150",
+		"cam_frName": "Hunt Club et Knoxdale"
+	},
+	{
+		"cam_id": "157",
+		"cam_name": "Bay & Laurier",
+		"cam_latitude": "45.416144",
+		"cam_longitude": "-75.704829",
+		"cam_frName": "Bay et Laurier"
+	},
+	{
+		"cam_id": "158",
+		"cam_name": "Carling & Kirkwood (South)",
+		"cam_latitude": "45.383474",
+		"cam_longitude": "-75.739512",
+		"cam_frName": "Carling et Kirkwood (Sud)"
+	},
+	{
+		"cam_id": "159",
+		"cam_name": "Prince of Wales & Strandherd",
+		"cam_latitude": "45.270372",
+		"cam_longitude": "-75.705181",
+		"cam_frName": "Prince of Wales et Strandherd"
+	},
+	{
+		"cam_id": "160",
+		"cam_name": "Carling & Churchill",
+		"cam_latitude": "45.380501",
+		"cam_longitude": "-75.746936",
+		"cam_frName": "Carling et Churchill"
+	},
+	{
+		"cam_id": "161",
+		"cam_name": "Catherine & Metcalfe",
+		"cam_latitude": "45.411437",
+		"cam_longitude": "-75.687522",
+		"cam_frName": "Catherine et Metcalfe"
+	},
+	{
+		"cam_id": "162",
+		"cam_name": "Isabella & Metcalfe",
+		"cam_latitude": "45.410609",
+		"cam_longitude": "-75.686790",
+		"cam_frName": "Isabella et Metcalfe"
+	},
+	{
+		"cam_id": "163",
+		"cam_name": "Laurier & O’Connor",
+		"cam_latitude": "45.419401",
+		"cam_longitude": "-75.697084",
+		"cam_frName": "Laurier et O'Connor"
+	},
+	{
+		"cam_id": "165",
+		"cam_name": "Bronson & Gladstone",
+		"cam_latitude": "45.407876",
+		"cam_longitude": "-75.703676",
+		"cam_frName": "Bronson et Gladstone"
+	},
+	{
+		"cam_id": "166",
+		"cam_name": "Merivale & Viewmount",
+		"cam_latitude": "45.343879",
+		"cam_longitude": "-75.729333",
+		"cam_frName": "Merivale et Viewmount"
+	},
+	{
+		"cam_id": "167",
+		"cam_name": "Fisher & Meadowlands",
+		"cam_latitude": "45.362648",
+		"cam_longitude": "-75.711412",
+		"cam_frName": "Fisher et Meadowlands"
+	},
+	{
+		"cam_id": "168",
+		"cam_name": "Smyth & St. Laurent",
+		"cam_latitude": "45.401389",
+		"cam_longitude": "-75.624198",
+		"cam_frName": "Smyth et St. Laurent"
+	},
+	{
+		"cam_id": "169",
+		"cam_name": "Preston & Somerset",
+		"cam_latitude": "45.408367",
+		"cam_longitude": "-75.714206",
+		"cam_frName": "Preston et Somerset"
+	},
+	{
+		"cam_id": "171",
+		"cam_name": "Bronson & Sunnyside",
+		"cam_latitude": "45.389932",
+		"cam_longitude": "-75.693852",
+		"cam_frName": "Bronson et Sunnyside"
+	},
+	{
+		"cam_id": "172",
+		"cam_name": "Riverside & Tremblay",
+		"cam_latitude": "45.415928",
+		"cam_longitude": "-75.656662",
+		"cam_frName": "Riverside et Tremblay"
+	},
+	{
+		"cam_id": "173",
+		"cam_name": "Pinecrest & Richmond",
+		"cam_latitude": "45.358022",
+		"cam_longitude": "-75.794516",
+		"cam_frName": "Pinecrest et Richmond"
+	},
+	{
+		"cam_id": "174",
+		"cam_name": "Montreal & Vanier",
+		"cam_latitude": "45.434419",
+		"cam_longitude": "-75.665832",
+		"cam_frName": "Montreal et Vanier"
+	},
+	{
+		"cam_id": "176",
+		"cam_name": "Airport Parkway & Uplands",
+		"cam_latitude": "45.329167",
+		"cam_longitude": "-75.653535",
+		"cam_frName": "Promenade de l'Aéroport et Uplands"
+	},
+	{
+		"cam_id": "177",
+		"cam_name": "Bronson & Catherine",
+		"cam_latitude": "45.405380",
+		"cam_longitude": "-75.702141",
+		"cam_frName": "Bronson et Catherine"
+	},
+	{
+		"cam_id": "178",
+		"cam_name": "Eagleson & Katimavik/Timm",
+		"cam_latitude": "45.314348",
+		"cam_longitude": "-75.882488",
+		"cam_frName": "Eagleson et Katimavik/Timm"
+	},
+	{
+		"cam_id": "179",
+		"cam_name": "Catherine & Kent",
+		"cam_latitude": "45.408836",
+		"cam_longitude": "-75.693728",
+		"cam_frName": "Catherine et Kent"
+	},
+	{
+		"cam_id": "180",
+		"cam_name": "Bay & Wellington",
+		"cam_latitude": "45.419357",
+		"cam_longitude": "-75.707640",
+		"cam_frName": "Bay et Wellington"
+	},
+	{
+		"cam_id": "182",
+		"cam_name": "Holland & Wellington",
+		"cam_latitude": "45.399755",
+		"cam_longitude": "-75.731937",
+		"cam_frName": "Holland et Wellington"
+	},
+	{
+		"cam_id": "184",
+		"cam_name": "Besserer & Waller",
+		"cam_latitude": "45.426742",
+		"cam_longitude": "-75.688348",
+		"cam_frName": "Besserer et Waller"
+	},
+	{
+		"cam_id": "185",
+		"cam_name": "Dalhousie & Murray",
+		"cam_latitude": "45.430288",
+		"cam_longitude": "-75.692304",
+		"cam_frName": "Dalhousie et Murray"
+	},
+	{
+		"cam_id": "186",
+		"cam_name": "Highway 417 (West) & Maitland",
+		"cam_latitude": "45.371317",
+		"cam_longitude": "-75.755120",
+		"cam_frName": "Autoroute 417 (Ouest) et Maitland"
+	},
+	{
+		"cam_id": "187",
+		"cam_name": "Bronson & Somerset",
+		"cam_latitude": "45.411471",
+		"cam_longitude": "-75.705777",
+		"cam_frName": "Bronson et Somerset"
+	},
+	{
+		"cam_id": "188",
+		"cam_name": "Lansdowne",
+		"cam_latitude": "45.398820",
+		"cam_longitude": "-75.685960",
+		"cam_frName": "Lansdowne"
+	},
+	{
+		"cam_id": "189",
+		"cam_name": "Bank & Fifth",
+		"cam_latitude": "45.401661",
+		"cam_longitude": "-75.687592",
+		"cam_frName": "Bank et Fifth"
+	},
+	{
+		"cam_id": "191",
+		"cam_name": "Eagleson & Michael Cowpland/Stonehaven",
+		"cam_latitude": "45.287880",
+		"cam_longitude": "-75.867925",
+		"cam_frName": "Eagleson et Michael Cowpland/Stonehaven"
+	},
+	{
+		"cam_id": "192",
+		"cam_name": "Castlefrank & Hazeldean",
+		"cam_latitude": "45.297433",
+		"cam_longitude": "-75.889543",
+		"cam_frName": "Castlefrank et Hazeldean"
+	},
+	{
+		"cam_id": "193",
+		"cam_name": "Heron & Riverside",
+		"cam_latitude": "45.376832",
+		"cam_longitude": "-75.691477",
+		"cam_frName": "Heron et Riverside"
+	},
+	{
+		"cam_id": "194",
+		"cam_name": "Alta Vista & Heron",
+		"cam_latitude": "45.378957",
+		"cam_longitude": "-75.661199",
+		"cam_frName": "Alta Vista et Heron"
+	},
+	{
+		"cam_id": "195",
+		"cam_name": "Donald & St. Laurent",
+		"cam_latitude": "45.428871",
+		"cam_longitude": "-75.640021",
+		"cam_frName": "Donald et St. Laurent"
+	},
+	{
+		"cam_id": "196",
+		"cam_name": "Place d’Orleans & St. Joseph",
+		"cam_latitude": "45.474802",
+		"cam_longitude": "-75.517839",
+		"cam_frName": "Place d'Orleans et St. Joseph"
+	},
+	{
+		"cam_id": "197",
+		"cam_name": "Champlain & Highway 174",
+		"cam_latitude": "45.479437",
+		"cam_longitude": "-75.517715",
+		"cam_frName": "Autoroute 174 et Champlain"
+	},
+	{
+		"cam_id": "198",
+		"cam_name": "Highway 174 & Jeanne D’Arc",
+		"cam_latitude": "45.468985",
+		"cam_longitude": "-75.545787",
+		"cam_frName": "Autoroute 174 et Jeanne D'Arc"
+	},
+	{
+		"cam_id": "199",
+		"cam_name": "Highway 174 east of Montreal",
+		"cam_latitude": "45.455385",
+		"cam_longitude": "-75.580482",
+		"cam_frName": "Autoroute 174 à l'est du chemin Montréal"
+	},
+	{
+		"cam_id": "201",
+		"cam_name": "Highway 174 west of Blair",
+		"cam_latitude": "45.428041",
+		"cam_longitude": "-75.612116",
+		"cam_frName": "Autoroute 174 à l'ouest du chemin Blair"
+	},
+	{
+		"cam_id": "202",
+		"cam_name": "Laurier & Transitway",
+		"cam_latitude": "45.423764",
+		"cam_longitude": "-75.686531",
+		"cam_frName": "Laurier et Le Transitway"
+	},
+	{
+		"cam_id": "203",
+		"cam_name": "Hunt Club & Lowes",
+		"cam_latitude": "45.339249",
+		"cam_longitude": "-75.713611",
+		"cam_frName": "Hunt Club et Lowes"
+	},
+	{
+		"cam_id": "204",
+		"cam_name": "Industrial & Trainyards",
+		"cam_latitude": "45.411587",
+		"cam_longitude": "-75.645504",
+		"cam_frName": "Industrial et Trainyards"
+	},
+	{
+		"cam_id": "205",
+		"cam_name": "Montreal & Blair",
+		"cam_latitude": "45.446387",
+		"cam_longitude": "-75.615292",
+		"cam_frName": "Montreal et Blair"
+	},
+	{
+		"cam_id": "206",
+		"cam_name": "Cumberland & Laurier",
+		"cam_latitude": "45.424559",
+		"cam_longitude": "-75.684734",
+		"cam_frName": "Cumberland et Laurier"
+	},
+	{
+		"cam_id": "208",
+		"cam_name": "Innes & Bearbrook",
+		"cam_latitude": "45.431719",
+		"cam_longitude": "-75.564458",
+		"cam_frName": "Innes et Bearbrook"
+	},
+	{
+		"cam_id": "209",
+		"cam_name": "Smyth & Hospital",
+		"cam_latitude": "45.399350",
+		"cam_longitude": "-75.647875",
+		"cam_frName": "Smyth et l'hôpital"
+	},
+	{
+		"cam_id": "210",
+		"cam_name": "Montreal & Aviation",
+		"cam_latitude": "45.443616",
+		"cam_longitude": "-75.638981",
+		"cam_frName": "Montreal et Promenade Aviation"
+	},
+	{
+		"cam_id": "211",
+		"cam_name": "Main & Clegg",
+		"cam_latitude": "45.406283",
+		"cam_longitude": "-75.676358",
+		"cam_frName": "Main et Clegg"
+	},
+	{
+		"cam_id": "212",
+		"cam_name": "Baseline & Richmond",
+		"cam_latitude": "45.334280",
+		"cam_longitude": "-75.813067",
+		"cam_frName": "Baseline et Richmond"
+	},
+	{
+		"cam_id": "213",
+		"cam_name": "Catherine & O’Connor",
+		"cam_latitude": "45.410625",
+		"cam_longitude": "75.689427",
+		"cam_frName": "Catherine et O'Connor"
+	},
+	{
+		"cam_id": "214",
+		"cam_name": "Boteler & Sussex",
+		"cam_latitude": "45.433891",
+		"cam_longitude": "-75.699255",
+		"cam_frName": "Boteler et Sussex"
+	},
+	{
+		"cam_id": "215",
+		"cam_name": "Innes & Blackburn Hamlet Bypass",
+		"cam_latitude": "45.425639",
+		"cam_longitude": "-75.575037",
+		"cam_frName": "Innes et rocade de Blackburn Bypass"
+	},
+	{
+		"cam_id": "216",
+		"cam_name": "Elgin & Gladstone",
+		"cam_latitude": "45.414645",
+		"cam_longitude": "-75.687540",
+		"cam_frName": "Elgin et Gladstone"
+	},
+	{
+		"cam_id": "217",
+		"cam_name": "Kent & Queen",
+		"cam_latitude": "45.419650",
+		"cam_longitude": "-75.702900",
+		"cam_frName": "Kent et Queen"
+	},
+	{
+		"cam_id": "218",
+		"cam_name": "Fifth and Queens Elizabeth Driveway",
+		"cam_latitude": "45.403960",
+		"cam_longitude": "-75.681997",
+		"cam_frName": "Fifth et promenade Reine-Élizabeth"
+	},
+	{
+		"cam_id": "219",
+		"cam_name": "Hunt Club & Uplands",
+		"cam_latitude": "45.344997",
+		"cam_longitude": "-75.665932",
+		"cam_frName": "Hunt Club et Uplands"
+	},
+	{
+		"cam_id": "220",
+		"cam_name": "St. Laurent & Walkley",
+		"cam_latitude": "45.388940",
+		"cam_longitude": "-75.617510",
+		"cam_frName": "St. Laurent et Walkley"
+	},
+	{
+		"cam_id": "221",
+		"cam_name": "Alta Vista & Industrial",
+		"cam_latitude": "45.411783",
+		"cam_longitude": "-75.655718",
+		"cam_frName": "Alta Vista et Industrial"
+	},
+	{
+		"cam_id": "222",
+		"cam_name": "Albion & Leitrim",
+		"cam_latitude": "45.320368",
+		"cam_longitude": "-75.623688",
+		"cam_frName": "Albion et Leitrim"
+	},
+	{
+		"cam_id": "223",
+		"cam_name": "Bank & Sunnyside",
+		"cam_latitude": "45.394286",
+		"cam_longitude": "-75.683434",
+		"cam_frName": "Bank et Sunnyside"
+	},
+	{
+		"cam_id": "225",
+		"cam_name": "Baseline & Fisher",
+		"cam_latitude": "45.371506",
+		"cam_longitude": "-75.716528",
+		"cam_frName": "Baseline et Fisher"
+	},
+	{
+		"cam_id": "226",
+		"cam_name": "Fallowfield & Prince of Wales",
+		"cam_latitude": "45.309605",
+		"cam_longitude": "-75.701653",
+		"cam_frName": "Fallowfield et Prince of Wales"
+	},
+	{
+		"cam_id": "228",
+		"cam_name": "Greenfield & Main",
+		"cam_latitude": "45.414348",
+		"cam_longitude": "-75.681108",
+		"cam_frName": "Greenfield et Main"
+	},
+	{
+		"cam_id": "229",
+		"cam_name": "Hawthorne & Main",
+		"cam_latitude": "45.412719",
+		"cam_longitude": "-75.680142",
+		"cam_frName": "Hawthorne et Main"
+	},
+	{
+		"cam_id": "230",
+		"cam_name": "Main & Riverdale",
+		"cam_latitude": "45.402755",
+		"cam_longitude": "-75.674418",
+		"cam_frName": "Main et Riverdale"
+	},
+	{
+		"cam_id": "231",
+		"cam_name": "St Joseph & Tenth Line",
+		"cam_latitude": "45.483568",
+		"cam_longitude": "-75.501030",
+		"cam_frName": "St Joseph et Tenth Line"
+	},
+	{
+		"cam_id": "232",
+		"cam_name": "Sir John A. Macdonald Parkway & Vimy",
+		"cam_latitude": "45.414477",
+		"cam_longitude": "-75.718374",
+		"cam_frName": "Promenade Sir-John-A.-Macdonald et Vimy"
+	},
+	{
+		"cam_id": "233",
+		"cam_name": "Foxfield & Greenbank",
+		"cam_latitude": "45.283267",
+		"cam_longitude": "-75.754104",
+		"cam_frName": "Foxfield & Greenbank"
+	},
+	{
+		"cam_id": "234",
+		"cam_name": "Highway 174 (East) at Blair",
+		"cam_latitude": "45.430354",
+		"cam_longitude": "-75.604010",
+		"cam_frName": "Autoroute 174 (Est) à Blair"
+	},
+	{
+		"cam_id": "236",
+		"cam_name": "Lemieux & St Laurent",
+		"cam_latitude": "45.422332",
+		"cam_longitude": "-75.636288",
+		"cam_frName": "Lemieux & St Laurent"
+	},
+	{
+		"cam_id": "237",
+		"cam_name": "Highway 417 (West) & Innes",
+		"cam_latitude": "45.414744",
+		"cam_longitude": "-75.607679",
+		"cam_frName": "Autoroute 417 (Ouest) et Innes"
+	},
+	{
+		"cam_id": "238",
+		"cam_name": "Highway 417 (East) & St Laurent",
+		"cam_latitude": "45.419283",
+		"cam_longitude": "-75.634590",
+		"cam_frName": "Autoroute 417 (Est) et St Laurent"
+	},
+	{
+		"cam_id": "239",
+		"cam_name": "McKenna Casey near Strandherd",
+		"cam_latitude": "45.259786",
+		"cam_longitude": "-75.773244",
+		"cam_frName": "McKenna Casey près de Strandherd"
+	},
+	{
+		"cam_id": "241",
+		"cam_name": "Clegg & Colonel By",
+		"cam_latitude": "45.404670",
+		"cam_longitude": "-75.680282",
+		"cam_frName": "Clegg et Colonel By"
+	},
+	{
+		"cam_id": "242",
+		"cam_name": "Bayview & Scott",
+		"cam_latitude": "45.407942",
+		"cam_longitude": "-75.724333",
+		"cam_frName": "Bayview et Scott"
+	},
+	{
+		"cam_id": "1",
+		"cam_name": "Baseline & Greenbank",
+		"cam_latitude": "45.340963",
+		"cam_longitude": "-75.787972",
+		"cam_frName": "Baseline et Greenbank"
+	},
+	{
+		"cam_id": "2",
+		"cam_name": "Baseline & Woodroffe",
+		"cam_latitude": "45.351474",
+		"cam_longitude": "-75.762974",
+		"cam_frName": "Baseline et Woodroffe"
+	},
+	{
+		"cam_id": "3",
+		"cam_name": "Eagleson & Hazeldean/Robertson",
+		"cam_latitude": "45.304052",
+		"cam_longitude": "-75.876786",
+		"cam_frName": "Eagleson et Hazeldean/Robertson"
+	},
+	{
+		"cam_id": "4",
+		"cam_name": "Bronson & Carling",
+		"cam_latitude": "45.401101",
+		"cam_longitude": "-75.699733",
+		"cam_frName": "Bronson et Carling"
+	},
+	{
+		"cam_id": "5",
+		"cam_name": "Bank & Walkley",
+		"cam_latitude": "45.370411",
+		"cam_longitude": "-75.663325",
+		"cam_frName": "Bank et Walkley"
+	},
+	{
+		"cam_id": "6",
+		"cam_name": "Blair & Innes",
+		"cam_latitude": "45.419344",
+		"cam_longitude": "-75.595636",
+		"cam_frName": "Blair et Innes"
+	},
+	{
+		"cam_id": "7",
+		"cam_name": "Montreal & St. Laurent",
+		"cam_latitude": "45.441102",
+		"cam_longitude": "-75.646835",
+		"cam_frName": "Montréal et St. Laurent"
+	},
+	{
+		"cam_id": "8",
+		"cam_name": "Belfast & St. Laurent",
+		"cam_latitude": "45.411858",
+		"cam_longitude": "-75.630376",
+		"cam_frName": "Belfast et St. Laurent"
+	},
+	{
+		"cam_id": "9",
+		"cam_name": "Fallowfield & Woodroffe",
+		"cam_latitude": "45.298554",
+		"cam_longitude": "-75.731226",
+		"cam_frName": "Fallowfield et Woodroffe"
+	},
+	{
+		"cam_id": "10",
+		"cam_name": "Orleans & St. Joseph",
+		"cam_latitude": "45.468625",
+		"cam_longitude": "-75.530235",
+		"cam_frName": "Orléans et St. Joseph"
+	},
+	{
+		"cam_id": "11",
+		"cam_name": "Hunt Club & Prince of Wales",
+		"cam_latitude": "45.334235",
+		"cam_longitude": "-75.700550",
+		"cam_frName": "Hunt Club et Prince of Wales"
+	},
+	{
+		"cam_id": "12",
+		"cam_name": "Hunt Club & Woodroffe",
+		"cam_latitude": "45.328782",
+		"cam_longitude": "-75.748975",
+		"cam_frName": "Hunt Club et Woodroffe"
+	},
+	{
+		"cam_id": "13",
+		"cam_name": "Metcalfe & Slater",
+		"cam_latitude": "45.421032",
+		"cam_longitude": "-75.695840",
+		"cam_frName": "Metcalfe et Slater"
+	},
+	{
+		"cam_id": "14",
+		"cam_name": "Innes/Industrial & St. Laurent",
+		"cam_latitude": "45.406627",
+		"cam_longitude": "-75.627473",
+		"cam_frName": "Innes/Industrial et St. Laurent"
+	},
+	{
+		"cam_id": "15",
+		"cam_name": "Fallowfield & Merivale",
+		"cam_latitude": "45.306790",
+		"cam_longitude": "-75.708194",
+		"cam_frName": "Fallowfield et Merivale"
+	},
+	{
+		"cam_id": "16",
+		"cam_name": "Bank & Hunt Club",
+		"cam_latitude": "45.353713",
+		"cam_longitude": "-75.599826",
+		"cam_frName": "Bank et Hunt Club"
+	},
+	{
+		"cam_id": "17",
+		"cam_name": "Hunt Club & Airport Parkway",
+		"cam_latitude": "45.350134",
+		"cam_longitude": "-75.654939",
+		"cam_frName": "Hunt Club et Promenade de l'Aéroport"
+	},
+	{
+		"cam_id": "18",
+		"cam_name": "Knoxdale & Woodroffe",
+		"cam_latitude": "45.333918",
+		"cam_longitude": "-75.752092",
+		"cam_frName": "Knoxdale et Woodroffe"
+	},
+	{
+		"cam_id": "19",
+		"cam_name": "Hunt Club & Riverside",
+		"cam_latitude": "45.334617",
+		"cam_longitude": "-75.693139",
+		"cam_frName": "Hunt Club et Riverside"
+	},
+	{
+		"cam_id": "21",
+		"cam_name": "Alta Vista & Smyth",
+		"cam_latitude": "45.398574",
+		"cam_longitude": "-75.661672",
+		"cam_frName": "Alta Vista et Smyth"
+	},
+	{
+		"cam_id": "22",
+		"cam_name": "Hunt Club & Merivale",
+		"cam_latitude": "45.334749",
+		"cam_longitude": "-75.724039",
+		"cam_frName": "Hunt Club et Merivale"
+	},
+	{
+		"cam_id": "23",
+		"cam_name": "Conroy & Walkley",
+		"cam_latitude": "45.383718",
+		"cam_longitude": "-75.630466",
+		"cam_frName": "Conroy et Walkley"
+	},
+	{
+		"cam_id": "25",
+		"cam_name": "Meadowlands/Tallwood & Woodroffe",
+		"cam_latitude": "45.342067",
+		"cam_longitude": "-75.756682",
+		"cam_frName": "Meadowlands/Tallwood et Woodroffe"
+	},
+	{
+		"cam_id": "26",
+		"cam_name": "Russell & Walkley",
+		"cam_latitude": "45.392860",
+		"cam_longitude": "-75.607575",
+		"cam_frName": "Russell et Walkley"
+	},
+	{
+		"cam_id": "27",
+		"cam_name": "Bank & Aylmer (Bank St. Bridge)",
+		"cam_latitude": "45.396207",
+		"cam_longitude": "-75.684482",
+		"cam_frName": "Bank et Aylmer (Pont de la rue Bank)"
+	},
+	{
+		"cam_id": "28",
+		"cam_name": "Campeau & March",
+		"cam_latitude": "45.322540",
+		"cam_longitude": "-75.887140",
+		"cam_frName": "Campeau et March"
+	},
+	{
+		"cam_id": "29",
+		"cam_name": "Carling & Pinecrest",
+		"cam_latitude": "45.359398",
+		"cam_longitude": "-75.795300",
+		"cam_frName": "Carling et Pinecrest"
+	},
+	{
+		"cam_id": "30",
+		"cam_name": "Highway 417 (East) & Innes",
+		"cam_latitude": "45.413297",
+		"cam_longitude": "-75.612127",
+		"cam_frName": "Autoroute 417 (Est) et Innes"
+	},
+	{
+		"cam_id": "32",
+		"cam_name": "Hazeldean & Terry Fox",
+		"cam_latitude": "45.293498",
+		"cam_longitude": "-75.895678",
+		"cam_frName": "Hazeldean et Terry Fox"
+	},
+	{
+		"cam_id": "33",
+		"cam_name": "Rideau & Sussex",
+		"cam_latitude": "45.425489",
+		"cam_longitude": "-75.693365",
+		"cam_frName": "Rideau et Sussex"
+	},
+	{
+		"cam_id": "34",
+		"cam_name": "Elgin & Queen",
+		"cam_latitude": "45.423239",
+		"cam_longitude": "75.694817",
+		"cam_frName": "Elgin et Queen"
+	},
+	{
+		"cam_id": "36",
+		"cam_name": "Laurier & Nicholas",
+		"cam_latitude": "45.423329",
+		"cam_longitude": "-75.687542",
+		"cam_frName": "Laurier et Nicholas"
+	},
+	{
+		"cam_id": "37",
+		"cam_name": "Mackenzie & Waller",
+		"cam_latitude": "45.424997",
+		"cam_longitude": "-75.687680",
+		"cam_frName": "Mackenzie et Waller"
+	},
+	{
+		"cam_id": "38",
+		"cam_name": "King Edward & Rideau",
+		"cam_latitude": "45.428792",
+		"cam_longitude": "-75.685726",
+		"cam_frName": "King Edward et Rideau"
+	},
+	{
+		"cam_id": "39",
+		"cam_name": "Bank & Wellington",
+		"cam_latitude": "45.421802",
+		"cam_longitude": "-75.701927",
+		"cam_frName": "Bank et Wellington"
+	},
+	{
+		"cam_id": "40",
+		"cam_name": "Sir John A. Macdonald Parkway/Wellington & Portage Bridge",
+		"cam_latitude": "45.419058",
+		"cam_longitude": "-75.711335",
+		"cam_frName": "Promenade Sir-John-A.-Macdonald/Wellington et pont Portage"
+	},
+	{
+		"cam_id": "41",
+		"cam_name": "Albert & Lyon",
+		"cam_latitude": "45.418135",
+		"cam_longitude": "-75.704411",
+		"cam_frName": "Albert et Lyon"
+	},
+	{
+		"cam_id": "42",
+		"cam_name": "Albert & O’Connor",
+		"cam_latitude": "45.420842",
+		"cam_longitude": "-75.698319",
+		"cam_frName": "Albert et O'Connor"
+	},
+	{
+		"cam_id": "44",
+		"cam_name": "Bronson & Laurier",
+		"cam_latitude": "45.414919",
+		"cam_longitude": "-75.707774",
+		"cam_frName": "Bronson et Laurier"
+	},
+	{
+		"cam_id": "45",
+		"cam_name": "Highway 417 & Kanata",
+		"cam_latitude": "45.311453",
+		"cam_longitude": "-75.902921",
+		"cam_frName": "Autoroute 417 et Kanata"
+	},
+	{
+		"cam_id": "46",
+		"cam_name": "Kent & Slater",
+		"cam_latitude": "45.418445",
+		"cam_longitude": "-75.701901",
+		"cam_frName": "Kent et Slater"
+	},
+	{
+		"cam_id": "47",
+		"cam_name": "Island Park & Sir John A. Macdonald Parkway",
+		"cam_latitude": "45.402560",
+		"cam_longitude": "-75.752816",
+		"cam_frName": "Island Park et Promenade Sir-John-A.-Macdonald"
+	},
+	{
+		"cam_id": "48",
+		"cam_name": "Bank & Riverside",
+		"cam_latitude": "45.388824",
+		"cam_longitude": "-75.677266",
+		"cam_frName": "Bank et Riverside"
+	},
+	{
+		"cam_id": "49",
+		"cam_name": "Booth & Sir John A. Macdonald Parkway",
+		"cam_latitude": "45.416354",
+		"cam_longitude": "-75.714726",
+		"cam_frName": "Booth et Promenade Sir-John-A.-Macdonald"
+	},
+	{
+		"cam_id": "51",
+		"cam_name": "King Edward & Sussex",
+		"cam_latitude": "45.438595",
+		"cam_longitude": "-75.696484",
+		"cam_frName": "King Edward et Sussex"
+	},
+	{
+		"cam_id": "52",
+		"cam_name": "Baseline & Merivale",
+		"cam_latitude": "45.365308",
+		"cam_longitude": "-75.730766",
+		"cam_frName": "Baseline et Merivale"
+	},
+	{
+		"cam_id": "53",
+		"cam_name": "Katimavik/Palladium & Terry Fox",
+		"cam_latitude": "45.302036",
+		"cam_longitude": "-75.907514",
+		"cam_frName": "Katimavik/Palladium et Terry Fox"
+	},
+	{
+		"cam_id": "54",
+		"cam_name": "Elgin & Pretoria/Queen Elizabeth",
+		"cam_latitude": "45.411373",
+		"cam_longitude": "-75.684054",
+		"cam_frName": "Elgin et Pretoria/Queen Elizabeth"
+	},
+	{
+		"cam_id": "55",
+		"cam_name": "Alexander-Tache/Laurier & Eddy",
+		"cam_latitude": "45.424711",
+		"cam_longitude": "-75.719782",
+		"cam_frName": "Alexander-Taché/Laurier et Eddy"
+	},
+	{
+		"cam_id": "57",
+		"cam_name": "Coventry/Ogilvie & St. Laurent",
+		"cam_latitude": "45.424229",
+		"cam_longitude": "-75.637306",
+		"cam_frName": "Coventry/Ogilvie et St. Laurent"
+	},
+	{
+		"cam_id": "59",
+		"cam_name": "Baseline & Clyde",
+		"cam_latitude": "45.361396",
+		"cam_longitude": "-75.739746",
+		"cam_frName": "Baseline et Clyde"
+	},
+	{
+		"cam_id": "60",
+		"cam_name": "Bayshore & Richmond",
+		"cam_latitude": "45.348111",
+		"cam_longitude": "-75.803526",
+		"cam_frName": "Bayshore et Richmond"
+	},
+	{
+		"cam_id": "61",
+		"cam_name": "Fallowfield & Greenbank",
+		"cam_latitude": "45.288122",
+		"cam_longitude": "-75.756975",
+		"cam_frName": "Fallowfield et Greenbank"
+	},
+	{
+		"cam_id": "62",
+		"cam_name": "Carling & Holland",
+		"cam_latitude": "45.389550",
+		"cam_longitude": "-75.725785",
+		"cam_frName": "Carling et Holland"
+	},
+	{
+		"cam_id": "63",
+		"cam_name": "Carling & Merivale",
+		"cam_latitude": "45.386725",
+		"cam_longitude": "-75.732658",
+		"cam_frName": "Carling et Merivale"
+	},
+	{
+		"cam_id": "64",
+		"cam_name": "Bank & Somerset",
+		"cam_latitude": "45.415410",
+		"cam_longitude": "-75.696381",
+		"cam_frName": "Bank et Somerset"
+	},
+	{
+		"cam_id": "65",
+		"cam_name": "King Edward & St. Patrick",
+		"cam_latitude": "45.432537",
+		"cam_longitude": "-75.688987",
+		"cam_frName": "King Edward et St. Patrick"
+	},
+	{
+		"cam_id": "67",
+		"cam_name": "Carling & Woodroffe",
+		"cam_latitude": "45.369212",
+		"cam_longitude": "-75.772802",
+		"cam_frName": "Carling et Woodroffe"
+	},
+	{
+		"cam_id": "68",
+		"cam_name": "Carling & Kirkwood (North)",
+		"cam_latitude": "45.384871",
+		"cam_longitude": "-75.740477",
+		"cam_frName": "Carling et Kirkwood (Nord)"
+	},
+	{
+		"cam_id": "69",
+		"cam_name": "Brookfield/Hog’s Back & Riverside",
+		"cam_latitude": "45.373071",
+		"cam_longitude": "-75.690942",
+		"cam_frName": "Brookfield/Hog's Back et Riverside"
+	},
+	{
+		"cam_id": "70",
+		"cam_name": "Highway 417 & Pinecrest",
+		"cam_latitude": "45.350843",
+		"cam_longitude": "-75.790593",
+		"cam_frName": "Autoroute 417 et Pinecrest"
+	},
+	{
+		"cam_id": "71",
+		"cam_name": "Innes & Orleans",
+		"cam_latitude": "45.444451",
+		"cam_longitude": "-75.532775",
+		"cam_frName": "Innes et Orléans"
+	},
+	{
+		"cam_id": "72",
+		"cam_name": "Highway 174 & Trim",
+		"cam_latitude": "45.495197",
+		"cam_longitude": "-75.482157",
+		"cam_frName": "Autoroute 174 et Trim"
+	},
+	{
+		"cam_id": "73",
+		"cam_name": "Blair & Ogilvie",
+		"cam_latitude": "45.435277",
+		"cam_longitude": "-75.609058",
+		"cam_frName": "Blair et Ogilvie"
+	},
+	{
+		"cam_id": "74",
+		"cam_name": "Greenbank & Berrigan/Wessex",
+		"cam_latitude": "45.274935",
+		"cam_longitude": "-75.748987",
+		"cam_frName": "Greenbank et Berrigan/Wessex"
+	},
+	{
+		"cam_id": "75",
+		"cam_name": "Strandherd & Woodroffe",
+		"cam_latitude": "45.275825",
+		"cam_longitude": "-75.718598",
+		"cam_frName": "Stranherd et Woodroffe"
+	},
+	{
+		"cam_id": "77",
+		"cam_name": "Innes & Tenth Line",
+		"cam_latitude": "45.460854",
+		"cam_longitude": "-75.487759",
+		"cam_frName": "Innes et Tenth Line"
+	},
+	{
+		"cam_id": "78",
+		"cam_name": "Albert & Preston",
+		"cam_latitude": "45.411434",
+		"cam_longitude": "-75.716046",
+		"cam_frName": "Albert et Preston"
+	},
+	{
+		"cam_id": "79",
+		"cam_name": "Longfields & Strandherd",
+		"cam_latitude": "45.273970",
+		"cam_longitude": "-75.738475",
+		"cam_frName": "Longfields et Strandherd"
+	},
+	{
+		"cam_id": "80",
+		"cam_name": "Highway 417 & Vanier",
+		"cam_latitude": "45.419360",
+		"cam_longitude": "-75.656744",
+		"cam_frName": "Autoroute 417 et Vanier"
+	},
+	{
+		"cam_id": "81",
+		"cam_name": "Bank & Heron",
+		"cam_latitude": "45.378576",
+		"cam_longitude": "-75.667528",
+		"cam_frName": "Bank et Heron"
+	},
+	{
+		"cam_id": "82",
+		"cam_name": "Innes & Jeanne D’Arc",
+		"cam_latitude": "45.455703",
+		"cam_longitude": "-75.504788",
+		"cam_frName": "Innes et Jeanne D'Arc"
+	},
+	{
+		"cam_id": "83",
+		"cam_name": "Moodie & Robertson",
+		"cam_latitude": "45.322091",
+		"cam_longitude": "-75.833324",
+		"cam_frName": "Moodie et Robertson"
+	},
+	{
+		"cam_id": "84",
+		"cam_name": "Iris & Woodroffe",
+		"cam_latitude": "45.357563",
+		"cam_longitude": "-75.766298",
+		"cam_frName": "Iris et Woodroffe"
+	},
+	{
+		"cam_id": "85",
+		"cam_name": "Bronson & Heron",
+		"cam_latitude": "45.377310",
+		"cam_longitude": "-75.684949",
+		"cam_frName": "Bronson et Heron"
+	},
+	{
+		"cam_id": "86",
+		"cam_name": "Limebank & River",
+		"cam_latitude": "45.321357",
+		"cam_longitude": "-75.688692",
+		"cam_frName": "Limebank et River"
+	},
+	{
+		"cam_id": "87",
+		"cam_name": "Transitway & Walkley",
+		"cam_latitude": "45.369026",
+		"cam_longitude": "-75.666653",
+		"cam_frName": "Transitway & Walkley"
+	},
+	{
+		"cam_id": "88",
+		"cam_name": "Cedarview & Hunt Club",
+		"cam_latitude": "45.313796",
+		"cam_longitude": "-75.799630",
+		"cam_frName": "Cedarview et Hunt Club"
+	},
+	{
+		"cam_id": "89",
+		"cam_name": "Holly Acres/Nanaimo & Richmond",
+		"cam_latitude": "45.342597",
+		"cam_longitude": "-75.807631",
+		"cam_frName": "Holly Acres/Nanaimo et Richmond"
+	},
+	{
+		"cam_id": "90",
+		"cam_name": "Greenbank & Hunt Club",
+		"cam_latitude": "45.322147",
+		"cam_longitude": "-75.777009",
+		"cam_frName": "Greenbank et Hunt Club"
+	},
+	{
+		"cam_id": "91",
+		"cam_name": "Leitrim & Limebank",
+		"cam_latitude": "45.297856",
+		"cam_longitude": "-75.676851",
+		"cam_frName": "Leitrim et Limebank"
+	},
+	{
+		"cam_id": "92",
+		"cam_name": "Meadowlands & Merivale",
+		"cam_latitude": "45.350905",
+		"cam_longitude": "-75.733533",
+		"cam_frName": "Meadowlands et Merivale"
+	},
+	{
+		"cam_id": "93",
+		"cam_name": "Carling & Preston",
+		"cam_latitude": "45.397551",
+		"cam_longitude": "-75.707692",
+		"cam_frName": "Carling et Preston"
+	},
+	{
+		"cam_id": "94",
+		"cam_name": "Charlotte & Rideau",
+		"cam_latitude": "45.432745",
+		"cam_longitude": "-75.676212",
+		"cam_frName": "Charlotte et Rideau"
+	},
+	{
+		"cam_id": "95",
+		"cam_name": "King Edward & Laurier",
+		"cam_latitude": "45.425358",
+		"cam_longitude": "-75.682877",
+		"cam_frName": "King Edward et Laurier"
+	},
+	{
+		"cam_id": "96",
+		"cam_name": "Cumberland & Murray",
+		"cam_latitude": "45.431192",
+		"cam_longitude": "-75.690084",
+		"cam_frName": "Cumberland et Murray"
+	},
+	{
+		"cam_id": "97",
+		"cam_name": "Booth & Somerset",
+		"cam_latitude": "45.409487",
+		"cam_longitude": "-75.710570",
+		"cam_frName": "Booth et Somerset"
+	},
+	{
+		"cam_id": "98",
+		"cam_name": "Bridge & Manotick Main",
+		"cam_latitude": "45.226445",
+		"cam_longitude": "-75.686249",
+		"cam_frName": "Bridge et Manotick Main"
+	},
+	{
+		"cam_id": "99",
+		"cam_name": "Bankfield & Prince of Wales",
+		"cam_latitude": "45.218030",
+		"cam_longitude": "-75.715887",
+		"cam_frName": "Bankfield et Prince of Wales"
+	},
+	{
+		"cam_id": "100",
+		"cam_name": "Beechwood/St. Patrick & Vanier",
+		"cam_latitude": "45.438362",
+		"cam_longitude": "-75.677779",
+		"cam_frName": "Beechwood/St. Patrick et Vanier"
+	},
+	{
+		"cam_id": "101",
+		"cam_name": "Gladstone & Preston",
+		"cam_latitude": "45.404626",
+		"cam_longitude": "-75.711937",
+		"cam_frName": "Gladstone et Preston"
+	},
+	{
+		"cam_id": "102",
+		"cam_name": "Richmond & Woodroffe",
+		"cam_latitude": "45.377535",
+		"cam_longitude": "-75.774972",
+		"cam_frName": "Richmond et Woodroffe"
+	},
+	{
+		"cam_id": "103",
+		"cam_name": "Bank & Gladstone",
+		"cam_latitude": "45.412190",
+		"cam_longitude": "-75.693599",
+		"cam_frName": "Bank et Gladstone"
+	},
+	{
+		"cam_id": "104",
+		"cam_name": "Bank & Catherine",
+		"cam_latitude": "45.409527",
+		"cam_longitude": "-75.692079",
+		"cam_frName": "Bank et Catherine"
+	},
+	{
+		"cam_id": "105",
+		"cam_name": "Meadowlands/Hog’s Back & Prince of Wales",
+		"cam_latitude": "45.368409",
+		"cam_longitude": "-75.701215",
+		"cam_frName": "Meadowlands/Hog's Back et Prince of Wales"
+	},
+	{
+		"cam_id": "106",
+		"cam_name": "Riverside & Walkley",
+		"cam_latitude": "45.360735",
+		"cam_longitude": "-75.687946",
+		"cam_frName": "Riverside et Walkley"
+	},
+	{
+		"cam_id": "107",
+		"cam_name": "Dalhousie & Rideau",
+		"cam_latitude": "45.427129",
+		"cam_longitude": "-75.689662",
+		"cam_frName": "Dalhousie et Rideau"
+	},
+	{
+		"cam_id": "108",
+		"cam_name": "Lincoln Fields Station & Sir John A. Macdonald Parkway",
+		"cam_latitude": "45.367224",
+		"cam_longitude": "-75.783457",
+		"cam_frName": "Station Lincoln Fields et Promenade Sir-John-A.-Macdonald"
+	},
+	{
+		"cam_id": "109",
+		"cam_name": "Parkdale & Wellington",
+		"cam_latitude": "45.400774",
+		"cam_longitude": "-75.729137",
+		"cam_frName": "Parkdale et Wellington"
+	},
+	{
+		"cam_id": "110",
+		"cam_name": "Earl Grey & Kanata",
+		"cam_latitude": "45.312028",
+		"cam_longitude": "-75.911428",
+		"cam_frName": "Earl Grey et Kanata"
+	},
+	{
+		"cam_id": "112",
+		"cam_name": "Bay & Slater",
+		"cam_latitude": "45.416897",
+		"cam_longitude": "-75.705492",
+		"cam_frName": "Bay et Slater"
+	},
+	{
+		"cam_id": "113",
+		"cam_name": "Island Park & Scott",
+		"cam_latitude": "45.398829",
+		"cam_longitude": "-75.745958",
+		"cam_frName": "Island Park et Scott"
+	},
+	{
+		"cam_id": "114",
+		"cam_name": "Holland & Scott",
+		"cam_latitude": "45.403750",
+		"cam_longitude": "-75.734321",
+		"cam_frName": "Holland et Scott"
+	},
+	{
+		"cam_id": "116",
+		"cam_name": "Aviation Parkway & Ogilvie",
+		"cam_latitude": "45.427972",
+		"cam_longitude": "-75.627022",
+		"cam_frName": "Promenade Aviation et Ogilvie"
+	},
+	{
+		"cam_id": "117",
+		"cam_name": "Hawthorne & Hunt Club",
+		"cam_latitude": "45.374033",
+		"cam_longitude": "-75.597258",
+		"cam_frName": "Hawthorne et Hunt Club"
+	},
+	{
+		"cam_id": "118",
+		"cam_name": "Belfast & Trainyards",
+		"cam_latitude": "45.414939",
+		"cam_longitude": "-75.642914",
+		"cam_frName": "Belfast et Trainyards"
+	},
+	{
+		"cam_id": "119",
+		"cam_name": "Hazeldean & Stittsville Main",
+		"cam_latitude": "45.272394",
+		"cam_longitude": "-75.929655",
+		"cam_frName": "Hazeldean et Stittsville Main"
+	}
+]

@@ -136,6 +136,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(mapView);
     }
 
+
+    public void viewJSON(View view){
+        Intent ViewJSON = new Intent(this, Camera_JSON.class);
+        startActivity(ViewJSON);
+    }
+
     public String SQLConnect(){
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);

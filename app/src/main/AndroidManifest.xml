@@ -22,10 +22,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyAtT6PClU3WqV3QmNRfhN6pCnSFpR3-fao" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -37,7 +40,8 @@
         <activity android:name=".DisplayCameraActivity" />
         <activity android:name=".DisplayCameraActivity2" />
         <activity android:name=".CameraList"/>
-        <activity android:name=".MapsActivity">
+        <activity android:name=".MapsActivity"/>
+        <activity android:name=".Camera_JSON">
 
         </activity>
     </application>
