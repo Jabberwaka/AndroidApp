@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         String db = null;
