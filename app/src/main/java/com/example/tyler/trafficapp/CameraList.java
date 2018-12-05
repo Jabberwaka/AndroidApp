@@ -7,7 +7,9 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.EditText;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -22,6 +24,8 @@ public class CameraList extends AppCompatActivity {
     private RecyclerView camList;
     private RecyclerView.Adapter camAdapter;
     private RecyclerView.LayoutManager camLayout;
+    private CameraAdapter camAd;
+    private EditText searchBar;
     ArrayList<Camera> cameraArrayList = new ArrayList<>();
 
     //String[][] camArray = loadArray();
@@ -41,11 +45,40 @@ public class CameraList extends AppCompatActivity {
         cameraArrayList = loadArray();
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerCam);
         //recyclerView.setHasFixedSize(true);
-        recyclerView.setAdapter(new CameraAdapter(this,cameraArrayList));
+        camAd = new CameraAdapter(this,cameraArrayList);
+        recyclerView.setAdapter(camAd);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
+        searchBar = findViewById(R.id.editText);
+        searchBar.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
 
+            }
 
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable search) {
+                searchCameras(search.toString());
+            }
+        });
+
+    }
+
+    void searchCameras(String searchText){
+        ArrayList<Camera> filteredCams = new ArrayList();
+
+        for(Camera cam: cameraArrayList){
+            if(cam.getCameraName().toLowerCase().contains(searchText.toLowerCase())){
+                filteredCams.add(cam);
+            }
+        }
+
+        camAd.filteredList(filteredCams);
     }
 
     public ArrayList<Camera> loadArray(){
