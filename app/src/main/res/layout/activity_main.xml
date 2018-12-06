@@ -37,10 +37,10 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="247dp"
         android:layout_height="77dp"
+        android:layout_marginTop="1dp"
         android:onClick="viewMap"
         android:stateListAnimator="@mipmap/ic_launcher_round"
-        android:text="@string/Camera_Map"
-    android:layout_marginTop="1dp"/>
+        android:text="@string/Camera_Map" />
 
     <Button
         android:id="@+id/button2"

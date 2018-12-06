@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">App de Traffic</string>
+    <string name="app_name">Les Cameras de Traffic d\'Ottawa</string>
     <string name="title_activity_maps">Mon Application</string>
     <string name="title">Titre</string>
     <string name="searchHint">Chercher les cameras</string>
@@ -17,7 +17,7 @@
     <string name="buttonMap">Carte des Cameras</string>
     <string name="textView3">Cameras Disponibles </string>
     <string name="List_View">Liste de cameras</string>
-
+    <string name="Json_View">Liste De Camera Json</string>
     <string name="Project">Project - Programmation Entreprise Web</string>
 
 

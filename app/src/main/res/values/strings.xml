@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">trafficapp</string>
+    <string name="app_name">Ottawa Traffic Cameras</string>
     <string name="title_activity_maps">MyApp</string>
     <string name="title">title</string>
+    <string name="searchHint">Search cameras</string>
+    <string name="back_info">Please press back again to go to the camera list page.</string>
 
 
     <string name="normal_map">Map</string>
@@ -16,9 +18,7 @@
     <string name="buttonMap">Camera Map</string>
     <string name="textView3">Available Cameras</string>
     <string name="List_View">Camera list</string>
-
-    <string name="Json_View">JSON Camera list</string>
-
+    <string name="Json_View">Json Camera list</string>
 
     <string name="Project"> Project - Web Enterprise Application </string>
 

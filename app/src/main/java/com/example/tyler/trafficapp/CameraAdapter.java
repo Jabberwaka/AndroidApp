@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -91,6 +92,10 @@ public class CameraAdapter extends RecyclerView.Adapter<CameraAdapter.ViewHolder
         //holder.text.setText(String.valueOf(cameraList.size()));
 
         //  ++position;
+    }
+    public void filteredList(ArrayList<Camera> list){
+        cameraList = list;
+        notifyDataSetChanged();
     }
 
     @Override
