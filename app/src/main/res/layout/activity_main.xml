@@ -78,7 +78,6 @@
             android:background="@drawable/button_bg"
             android:drawableLeft="@drawable/ic_sign_in"
             android:fontFamily="sans-serif-condensed"
-            android:onClick="adminUser"
             android:text="@string/login_button_login"
             android:textColor="@android:color/white"
             android:textSize="20dp" />
@@ -90,8 +89,6 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/signup_bg"
             android:fontFamily="sans-serif-condensed"
-            android:onClick="standardUser"
-
             android:text="@string/login_button_regUser"
             android:textColor="#ef388a"
             android:textSize="20dp" />

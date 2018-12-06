@@ -21,7 +21,7 @@
     <string name="login_usernameHint">Username</string>
     <string name="login_passwordHint">Password</string>
     <string name="login_button_login">Login</string>
-    <string name="login_button_regUser">Continue without account</string>
+    <string name="login_button_regUser">Register</string>
     <string name="title_activity_list_options">ListOptionsActivity</string>
 
 </resources>
