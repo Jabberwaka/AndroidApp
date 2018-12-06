@@ -1,5 +1,6 @@
 package com.example.tyler.trafficapp;
 
+import android.app.VoiceInteractor;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import org.json.JSONObject;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
@@ -34,6 +36,10 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
+import com.android.volley.toolbox.JsonObjectRequest;
 
 public class CameraList extends AppCompatActivity {
 
@@ -74,8 +80,8 @@ public class CameraList extends AppCompatActivity {
 
             String protocol = "http://";
             //this will continually have to be updated, everytime, to the ip of the computer running the restful server thing
-            String ip = "10.70.133.200";
-            String urlS = ":29153/TRAFFIC/webresources/com.mycompany.traffic.cameras/1/250";
+            String ip = "192.168.2.21";
+            String urlS = ":50323/Cam_Sql/webresources/com.mycompany.cam_sql.camerasfrench/1/250";
             String urlString = protocol+ip+urlS;
             URL url = null;
             try {
@@ -127,9 +133,9 @@ public class CameraList extends AppCompatActivity {
                 e.printStackTrace();
             }
 
-            String[] camerasAll = stresult.split("<cameras>");
+            String[] camerasAll = stresult.split("<camerasFrench>");
             int len = camerasAll.length;
-            String[][] cameraInfo = new String[len-1][8];
+            String[][] cameraInfo = new String[len-1][10];
             for(int i = 1; i < len; ++i){
                 cameraInfo[i-1]=camerasAll[i].split("<\\s*[/a-zA-Z]+\\s*>");
                 if(cameraInfo[i-1][7].contains("&amp;")){
@@ -140,21 +146,40 @@ public class CameraList extends AppCompatActivity {
             //id is in 1, latitude 3, longitude 5, name 7
             for(int i = 0; i < cameraInfo.length; ++i){
                 String cameraName = cameraInfo[i][7];
+                if (getResources().getConfiguration().locale.getLanguage() == "fr") {
+
+                    cameraName = cameraInfo[i][9];
+
+                }
                 String cameraLong = cameraInfo[i][5];
                 String cameraLat = cameraInfo[i][3];
                 String cameraId = cameraInfo[i][1];
                 cameras.add(new Camera(cameraName, cameraId, cameraLong, cameraLat));
             }
 
-
-
-
+//            String[] camerasAll = stresult.split("<cameras>");
+//            int len = camerasAll.length;
+//            String[][] cameraInfo = new String[len-1][8];
+//            for(int i = 1; i < len; ++i){
+//                cameraInfo[i-1]=camerasAll[i].split("<\\s*[/a-zA-Z]+\\s*>");
+//                if(cameraInfo[i-1][7].contains("&amp;")){
+//                    cameraInfo[i-1][7] = cameraInfo[i-1][7].replace("&amp;", "&");
+//                }
+//            }
+//
+//            //id is in 1, latitude 3, longitude 5, name 7
+//            for(int i = 0; i < cameraInfo.length; ++i){
+//                String cameraName = cameraInfo[i][7];
+//                String cameraLong = cameraInfo[i][5];
+//                String cameraLat = cameraInfo[i][3];
+//                String cameraId = cameraInfo[i][1];
+//                cameras.add(new Camera(cameraName, cameraId, cameraLong, cameraLat));
+//            }
 
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
 
 
         /*

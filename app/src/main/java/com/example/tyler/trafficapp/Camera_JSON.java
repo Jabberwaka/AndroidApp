@@ -8,7 +8,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+
+import java.io.IOException;
+import java.io.StringWriter;
 import java.lang.reflect.Type;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -19,11 +25,23 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
 
 import java.io.InputStream;
 import java.util.Scanner;
 
 import android.widget.Toast;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 
 
 public class Camera_JSON extends AppCompatActivity {
@@ -36,67 +54,94 @@ public class Camera_JSON extends AppCompatActivity {
 
     }
 
-
     public void loadGrades(View view) {
 
-        StringBuilder builder = new StringBuilder();
 
- InputStream is = null;
-            Resources res = getResources();
-            try {
-
-               // if ()
-                 is = res.openRawResource(R.raw.student_grades);
-            }
-            catch (Exception e){
-                e.printStackTrace();
-            }
-                builder = new StringBuilder();
-                Scanner scanner = new Scanner(is);
-
-                while (scanner.hasNext()) {
-                    builder.append(scanner.nextLine());
-                }
-                parseJSON(builder.toString());
-
-      //  RecyclerView view1 = (RecyclerView) findViewById(R.id.recyclerCam);
-       // view1.setText(builder.toString());
         ArrayList<Camera> dataList = new ArrayList<>();
 
-        JSONArray jsonArr;
         try {
 
-            jsonArr  = new JSONArray(builder.toString());
+            String protocol = "http://";
+            //this will continually have to be updated, everytime, to the ip of the computer running the restful server thing
+            String ip = "192.168.2.21";
+            String urlS = ":50323/Cam_Sql/webresources/com.mycompany.cam_sql.camerasfrench/1/250";
+            String urlString = protocol + ip + urlS;
+            URL url = null;
+            try {
+                url = new URL(urlString);
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
 
-        for (int i = 0; i < jsonArr.length(); i++) {
+            URLConnection conn = null;
+            try {
+                conn = url.openConnection();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
-            JSONObject jsonObj = jsonArr.getJSONObject(i);
-           // Camera camera = null;
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = null;
+            try {
+                builder = factory.newDocumentBuilder();
+            } catch (ParserConfigurationException e) {
+                e.printStackTrace();
+            }
 
-            String name = jsonObj.getString("cam_name");
-            String id = jsonObj.getString("cam_id");
-             String lon = jsonObj.getString("cam_longitude");
-            String lat = jsonObj.getString("cam_latitude");
+            Document docb = null;
+            try {
+                docb = builder.parse(conn.getInputStream());
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (SAXException e) {
+                e.printStackTrace();
+            }
 
-            if (getResources().getConfiguration().locale.getLanguage().equals("fr")) {
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer xform = null;
+            try {
+                xform = transformerFactory.newTransformer();
+            } catch (TransformerConfigurationException e) {
+                e.printStackTrace();
+            }
 
-                name = jsonObj.getString("cam_frName");
+            StringWriter writer = new StringWriter();
+            StreamResult result = new StreamResult(writer);
 
+            String stresult = null;
+            try {
+                xform.transform(new DOMSource(docb), result);
+                stresult = writer.toString();
+            } catch (TransformerException e) {
+                e.printStackTrace();
+            }
+
+            String[] camerasAll = stresult.split("<camerasFrench>");
+            int len = camerasAll.length;
+            String[][] cameraInfo = new String[len - 1][10];
+            for (int i = 1; i < len; ++i) {
+                cameraInfo[i - 1] = camerasAll[i].split("<\\s*[/a-zA-Z]+\\s*>");
+                if (cameraInfo[i - 1][7].contains("&amp;")) {
+                    cameraInfo[i - 1][7] = cameraInfo[i - 1][7].replace("&amp;", "&");
+                }
+            }
+
+            for (int i = 0; i < cameraInfo.length; ++i) {
+                String cameraName = cameraInfo[i][7];
+                if (getResources().getConfiguration().locale.getLanguage() == "fr") {
+
+                    cameraName = cameraInfo[i][9];
+
+                }
+                String cameraLong = cameraInfo[i][5];
+                String cameraLat = cameraInfo[i][3];
+                String cameraId = cameraInfo[i][1];
+                dataList.add(new Camera(cameraName, cameraId, cameraLat, cameraLong));
 
             }
-           // Camera camera= new Camera(name,id,lat,lon);
-            dataList.add(new Camera(name,id,lat,lon));
-           // view1.setText(camera.toString());//+" "+lon+""+lat);
 
-
-
-
-
-            // data.value = jsonObj.getString("value");
-
-        }
-        }
-        catch (JSONException e){
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
@@ -112,30 +157,11 @@ public class Camera_JSON extends AppCompatActivity {
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerCam);
         //recyclerView.setHasFixedSize(true);
-        recyclerView.setAdapter(new CameraAdapter(this,dataList));
+        recyclerView.setAdapter(new CameraAdapter(getApplicationContext(), dataList));
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-    }
 
-    private void parseJSON(String s) {
-
-     //   RecyclerView view = (RecyclerView) findViewById(R.id.recyclerCam);
-
-       // ArrayList<ArrayList<String>> list = gson.fromJson(jsonString, new TypeToken<ArrayList<ArrayList<String>>>() {}.getType());
-
-
-      //  Type listType = new TypeToken<List<Camera>>() {}.getType();
-
-//        StringBuilder builder = new StringBuilder();
-//
-//        try{
-//            JSONObject root = new JSONObject();
-//        }
-//        catch (Exception e){
-//            e.printStackTrace();
-//        }
-        //view.setText(s);
     }
 
 
