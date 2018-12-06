@@ -39,30 +39,7 @@ public class MainActivity extends AppCompatActivity {
         StrictMode.setThreadPolicy(policy);
         String db = null;
         try {
-            Class.forName("net.sourceforge.jtds.jdbc.Driver");
-            Connection dbCon = DriverManager.getConnection("jdbc:jtds:sqlserver://traffic-cam.database.windows.net:1433/Android;user=tyler@traffic-cam;password=Password!;");
-            db = dbCon.toString();
 
-            Statement stmt = dbCon.createStatement();
-            String query = "SELECT cam_name FROM Traffic_Camera WHERE cam_id = 1;";
-            ResultSet rs = stmt.executeQuery(query);
-            if(rs.next()){
-                String name = rs.getString(1);
-              //  button.setText(name);
-            }
-
-            query = "SELECT COUNT(*) FROM Cameras;";
-            rs = stmt.executeQuery(query);
-            if(rs.next()){
-               // button3.setText(rs.getString(1));
-            }
-
-             query = "SELECT cam_name FROM Traffic_Camera WHERE cam_id = 2;";
-             rs = stmt.executeQuery(query);
-             if(rs.next()){
-                String name = rs.getString(1);
-                //button2.setText(name);
-            }
 
         }
         catch (Exception e){

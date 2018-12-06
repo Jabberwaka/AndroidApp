@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -46,24 +49,46 @@ import javax.xml.transform.stream.StreamResult;
 
 public class Camera_JSON extends AppCompatActivity {
 
+    private CameraAdapter camAd;
+    private EditText searchBar;
+   // ArrayList<Camera> cameraArrayList = new ArrayList<>();
+    ArrayList<Camera> dataList = new ArrayList<>();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_json);
-        //  Toast.makeText(this, "Lol", Toast.LENGTH_SHORT).show();;
+
+        searchBar = findViewById(R.id.editText1);
+        searchBar.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable search) {
+                searchCameras(search.toString());
+            }
+        });
 
     }
 
     public void loadGrades(View view) {
 
 
-        ArrayList<Camera> dataList = new ArrayList<>();
 
         try {
 
             String protocol = "http://";
             //this will continually have to be updated, everytime, to the ip of the computer running the restful server thing
-            String ip = "192.168.2.21";
+            String ip = "10.70.106.72";
             String urlS = ":50323/Cam_Sql/webresources/com.mycompany.cam_sql.camerasfrench/1/250";
             String urlString = protocol + ip + urlS;
             URL url = null;
@@ -156,6 +181,8 @@ public class Camera_JSON extends AppCompatActivity {
 
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerCam);
+        camAd = new CameraAdapter(this,dataList);
+        recyclerView.setAdapter(camAd);
         //recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(new CameraAdapter(getApplicationContext(), dataList));
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -164,6 +191,16 @@ public class Camera_JSON extends AppCompatActivity {
 
     }
 
+    void searchCameras(String searchText){
+        ArrayList<Camera> filteredCams = new ArrayList();
 
+        for(Camera cam: dataList){
+            if(cam.getCameraName().toLowerCase().contains(searchText.toLowerCase())){
+                filteredCams.add(cam);
+            }
+        }
+
+        camAd.filteredList(filteredCams);
+    }
 
 }
